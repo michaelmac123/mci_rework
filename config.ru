@@ -5,7 +5,7 @@ require "middleman/rack"
 require "rack/contrib/try_static"
 
 # Build the static site when the app boots
-`bundle exec middleman build`
+# `bundle exec middleman build`
 
 # Add http auth to heroku via puma
 # use Rack::Auth::Basic, "Restricted Area" do |username, password|

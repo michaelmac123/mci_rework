@@ -1,6 +1,6 @@
 / Header
 .intro-header
-  #carousel-example-generic.carousel.slide{ data:{ride:"carousel" } }
+  #carousel-main-header.carousel.slide{ data:{ride:"carousel" } }
     %ol.carousel-indicators
       %li.active{ data:{target:"#carousel-example-generic", slide:{to:"0"}}}
       %li{ data:{target:"#carousel-example-generic", slide:{to:"1"}}}
@@ -8,27 +8,32 @@
 
     .carousel-inner{role: "listbox"}
       .item.active
-        = link_to (image_tag 'images/main-header-image.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
-        .carousel-caption.pull-right
-          %h2.dress-class.padding-gap10
-            Project Name #1
-      .item
-        = link_to (image_tag 'images/main-header-image.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
+        = link_to (image_tag 'images/MCI-senior-living-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
         .carousel-caption
-          %h2.dress-class.padding-gap10
-            Project Name #2
+          .carousel-caption-content
+            %h2.work-class Senior Living
+            %h3
+              %i "Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis."
+      .item
+        = link_to (image_tag 'images/MCI-tenant-improvements-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
+        .carousel-caption
+          .carousel-caption-content
+            %h2.work-class Tenant Improvement
+            %h3
+              %i "Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis."
 
       .item
-        = link_to (image_tag 'images/main-header-image.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
+        = link_to (image_tag 'images/MCI-catastrophic-loss-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
         .carousel-caption
-          %h2.dress-class.padding-gap10
-            Project Name #3
+          .carousel-caption-content
+            %h2.work-class Catastrophic Loss
+            %h3
+              %i "Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis."
 
-    %a.left.carousel-control{ href: "#carousel-example-generic", role: "button", data:{slide: "prev"}}
+    %a.left.carousel-control{ href: "#carousel-main-header", role: "button", data:{slide: "prev"}}
       %span.glyphicon.glyphicon-chevron-left
       %span.sr-only Previous
 
-    %a.right.carousel-control{ href:"#carousel-example-generic", role:"button", data:{slide:"next"}}
+    %a.right.carousel-control{ href:"#carousel-main-header", role:"button", data:{slide:"next"}}
       %span.glyphicon.glyphicon-chevron-right
       %span.sr-only Next
-

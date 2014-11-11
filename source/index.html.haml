@@ -7,9 +7,12 @@ body_class: index
 = partial "layouts/header_carousel"
 
 / Page Content
-.row.call-out-section
-  .call-out-circle
-  %h3.col-xs-10.col-xs-push-2 Pellentesque nibh felis, eleifend id, commodo in, interdum vitae, leo. Praesent eu elit. Ut eu ligula.
+.container.call-out-section
+  .row
+    .col-md-2.col-xs-4
+      .call-out-circle.hidden-xs= image_tag 'bio-images/MCI-Ron-bio-avantar.png', alt: "Mitchell Contracting", class: 'call-out-avantar'
+    .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
+      %h3.call-out-content Pellentesque nibh felis, eleifend id, commodo in, interdum vitae, leo. Praesent eu elit eu ligula.
 
 .content-section-a
   .container
