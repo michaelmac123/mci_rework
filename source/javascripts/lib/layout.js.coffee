@@ -8,7 +8,8 @@ $(document).ready () ->
   nav = document.querySelector("nav")
   nav.classList.add "slide--up"  if window.location.hash
   new Headroom(nav,
-    tolerance: 0
-    offset: 550
+    tolerance: 10
+    offset: 350
+
   ).init()
   return
