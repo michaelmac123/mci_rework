@@ -294,40 +294,13 @@ footer {
 }
 
 @media(max-width:767px) {
-  .intro-header.partners-qb {
-    background: url("/images/header-image.jpg") no-repeat center center;
-    background-size: cover; }
+  .intro-header {
+    margin-top:     27%; }
+  .carousel-caption {
+    font-size:      .8em;
+    left:           0;
+    right:          0;
+  }
 
-  .intro-message {
-    padding-bottom: 15%;
-    h1 {
-      font-size:      3em;
-      text-align:     center; }
-    h2 {
-      border:         none;
-      font-size:      1.3em;
-      text-align:     center; } }
-
-  .cta-container {
-    @include float; }
-
-  .cta {
-    font-size:        inherit; }
-
-  ul.intro-social-buttons {
-      & > li {
-      display:      block;
-      margin-bottom: 20px;
-      padding:      0;
-      &:last-child {
-        margin-bottom: 0; } } }
-
-  .intro-divider {
-    width:          100%; }
-
-  .banner h2 {
-    font-size:    3em;
-    margin:       0;
-    text-shadow:  2px 2px 3px rgba(0,0,0,0.6); }
 
 }
