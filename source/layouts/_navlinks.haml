@@ -1,0 +1,2 @@
+- data.pages.each do |page|
+  %li{nav_active("#{page['name']}")}= link_to "#{page['name'].upcase}", "/#{(page.name).parameterize}"

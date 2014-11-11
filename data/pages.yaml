@@ -1,0 +1,19 @@
+- page:
+  id: 1
+  name: Our Home
+
+- page:
+  id: 2
+  name: Our Company
+
+- page:
+  id: 3
+  name: Our Projects
+
+- page:
+  id: 4
+  name: Our Services
+
+- page:
+  id: 5
+  name: Contact

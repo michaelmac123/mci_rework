@@ -1,0 +1,62 @@
+@import "variables", "mixins", "fonts";
+
+// Resets
+body,
+html {
+  font:{
+    family: $work-class;
+    weight: normal; }
+  height: 100%;
+  width:  100%; }
+
+h1,
+h2,
+h3 {
+  font:{
+    family: $upper-class;
+    weight: normal; } }
+
+h4,
+h5,
+h6 {
+  font:{
+    family: $dress-class;
+    weight: normal; } }
+
+a,
+ul li,
+p {
+  font:{
+    family: $work-class;
+    weight: normal; } }
+
+.bold {
+  font-weight:  bold; }
+
+.btn {
+  @include border-radius(2px); }
+
+.border-left {
+  border-left:  1px solid darken($bone, 10); }
+
+
+// Overrides
+.headroom {
+    -webkit-transition: transform 200ms linear;
+    -o-transition: transform 200ms linear;
+    transition: transform 200ms linear }
+
+.headroom--pinned {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%) }
+
+.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%) }
+

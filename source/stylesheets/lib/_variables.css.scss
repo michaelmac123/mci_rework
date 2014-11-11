@@ -1,0 +1,82 @@
+$black:     #000000;
+$charcoal:  #464646;
+$dark-blue: #313641;
+$med-blue:  #666B73;
+$light-blue:#8A9099;
+
+$white:     #FFFFFF;
+$bone:      #F2ECE5;
+
+$khaki:     #D9D1C7;
+$tan:       #8C8780;
+
+$theme-red: #901E19;
+$red-orange:#B73E18;
+
+// Color pairs for standard colors.
+$colors: "charcoal" $charcoal, "white" $white, "light-blue" $light-blue, "med-blue" $med-blue, "dark-blue" $dark-blue, "bone" $bone, "khaki" $khaki, "tan" $tan;
+@each $color in $colors {
+  $key:   nth(unquote($color), 1);
+  $value: nth($color, 2);
+  .#{$key} {
+    color:  $value;
+    fill:   $value;
+    &-bg {
+      background-color: $value; } } }
+
+.btn.btn-dark-blue{
+  $primary:     $dark-blue;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    background: lighten($primary, 8);
+    color:      $white; } }
+
+.btn.btn-med-blue{
+  $primary:     $med-blue;
+  border-color: lighten($med-blue, 20);
+  color:        $white;
+  &:hover {
+    background: lighten($med-blue, 8);
+    color:      $white; } }
+
+.btn.btn-lt-blue{
+  $primary:     lighten($med-blue, 10);
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    background: lighten($primary, 8);
+    color:      $white; } }
+
+.btn.btn-red-orange{
+  $primary:     $red-orange;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    background: lighten($primary, 8);
+    color:      $white; } }
+
+.btn.btn-gray{
+  $primary:     $gray;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    background: lighten($primary, 8);
+    color:      $white; } }
+
+//Fonts
+$sansFontFamily:    "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:   "Josefin Slab", "Times New Roman", Times, serif;
+$maven-pro:         "Maven Pro", $serifFontFamily;
+
+$upper-class:   $serifFontFamily;
+$dress-class:   $maven-pro;
+$work-class:    $sansFontFamily;
+
+.upper-class {  font-family:  $upper-class; line-height:110%; } // weird line-height
+.dress-class {  font-family:  $dress-class; }
+.work-class  {  font-family:  $work-class;  }

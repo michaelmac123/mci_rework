@@ -1,0 +1,66 @@
+@mixin float($float:left, $pos:relative) {
+  float:    $float;
+  position: $pos;}
+
+@mixin gapmaker($sizes: (5 10 15 25), $sides: (top bottom), $type: "margin", $class: "" ) {
+  @if $type == nil {
+    @each $sz in $sizes {
+      @each $sd in $sides {
+      &.move-#{$sides}#{$sz} {
+        #{$sd}: #{$sz}px; } } }
+  }@else {
+    @each $sz in $sizes {
+      @each $sd in $sides {
+      &.#{$type}-#{$class}gap#{$sz} {
+        #{$type}:{
+          #{$sd}: #{$sz}px; } } } } } }
+
+@mixin border-radius($radius: 10px, $moz:true, $webkit: true, $ms:true, $pie:true){
+  @if $moz      {-moz-border-radius:    $radius;}
+  @if $webkit   {-webkit-border-radius: $radius;}
+  @if $ms       {-ms-border-radius:     $radius;}
+  border-radius: $radius; }
+
+$margin-vars: ( 0 3 5 10 15 20 25 30 35 40);
+*[class*="margin-gap"] {
+  @include gapmaker( $sizes:( $margin-vars ), $sides: (top right bottom left) ); }
+
+*[class*="margin-topgap"] {
+  @include gapmaker( $sizes:( $margin-vars ), $sides: (top), $class: top, $type: margin ); }
+
+*[class*="margin-bottomgap"] {
+  @include gapmaker( $sizes:( $margin-vars ), $sides: (bottom), $class: bottom, $type: margin ); }
+
+*[class*="margin-leftgap"] {
+  @include gapmaker( $sizes:( $margin-vars ), $sides: (left), $class: left, $type: margin ); }
+
+*[class*="margin-rightgap"] {
+  @include gapmaker( $sizes:( $margin-vars ), $sides: (right), $class: right, $type: margin ); }
+
+*[class*="margin-sidegap"] {
+  @include gapmaker( $sizes:( $margin-vars ), $sides: (right left), $class: (side) ); }
+
+$padding-vars:( 0 5 10 15 20 25 30 35 40 );
+*[class*="padding-gap"] {
+  @include gapmaker( $sizes:( $padding-vars ), $sides: (top right bottom left), $type: padding );
+  @include clearfix; }
+
+*[class*="padding-sidegap"] {
+  @include gapmaker( $sizes:( $padding-vars ), $sides: (right left), $class: side, $type: padding );
+  @include clearfix; }
+
+*[class*="padding-topgap"] {
+  @include gapmaker( $sizes:( $padding-vars ), $sides: (top), $class: top, $type: padding );
+  @include clearfix; }
+
+*[class*="padding-bottomgap"] {
+  @include gapmaker( $sizes:( $padding-vars ), $sides: (bottom), $class: bottom, $type: padding );
+  @include clearfix; }
+
+*[class*="padding-leftgap"] {
+  @include gapmaker( $sizes:( $padding-vars ), $sides: (left), $class: left, $type: padding );
+  @include clearfix; }
+
+*[class*="padding-rightgap"] {
+  @include gapmaker( $sizes:( $padding-vars ), $sides: (right), $class: right, $type: padding );
+  @include clearfix; }
