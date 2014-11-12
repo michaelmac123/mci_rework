@@ -37,7 +37,9 @@
     &-img {
       height:       75px; } }
   .navbar-toggle {
-    background-color: rgba($bone, .5); } }
+    background-color: rgba($bone, .5);
+    margin-top:     7.5%;
+    padding:        10px; } }
 
 .carousel {
   &-container {
@@ -145,11 +147,13 @@
       bottom:     1px solid lighten($med-blue, 35); }
     padding:      40px 0; }
   &-link {
+    display:      block;
     height:       100%;
     position:     relative;
     width:        100%;
     &:after {
-      background: rgba($med-blue, 0.6);
+      background: rgba($med-blue, 0.35);
+      border:     1px solid rgba($med-blue, 0.55);
       content:    '\A';
       height:     100%;
       left:       0;
@@ -319,11 +323,21 @@ footer {
 @media(max-width:767px) {
   .intro-header {
     margin-top:     27%; }
+  .carousel.slide {
+    padding-top:    24%; }
+  .carousel-indicators {
+    bottom:         0; }
   .carousel-caption {
     font-size:      .8em;
     left:           0;
-    right:          0;
+    right:          0; }
+  .carousel-control {
+    span.glyphicon {
+      top:          57%; }
+    &.left span {
+      left:         20%; }
+
+    &.right span {
+      right:         20%; }
   }
-
-
 }
