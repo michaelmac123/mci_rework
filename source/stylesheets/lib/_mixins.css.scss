@@ -2,6 +2,20 @@
   float:    $float;
   position: $pos;}
 
+@mixin transform($properties) {
+  -webkit-transform:  $properties; /* Safari and Chrome */
+  -moz-transform:     $properties; /* Firefox */
+  -ms-transform:      $properties; /* IE 9 */
+  -o-transform:       $properties;
+  transform:          $properties; }
+
+@mixin transitions($properties){
+  -webkit-transition: $properties;  /* Saf3.2+, Chrome */
+  -moz-transition:    $properties;  /* FF4+ */
+  -ms-transition:     $properties;  /* IE10 */
+  -o-transition:      $properties;  /* Opera 10.5+ */
+  transition:         $properties; }
+
 @mixin gapmaker($sizes: (5 10 15 25), $sides: (top bottom), $type: "margin", $class: "" ) {
   @if $type == nil {
     @each $sz in $sizes {
