@@ -1,0 +1,57 @@
+- services:
+  id: 1
+  icon: "building-o"
+  title: "Tenant Improvements"
+  details:
+    - "Pre-construction and ongoing scheduling to assure well-choreographed assignments of sub-contractors"
+    - "Daily on-site Superintendent with back up of a project management team to assure accurate and timely completion of projects"
+    - "Around the clock 24/7 construction capabilities to assure quick turnaround of retail spaces"
+    - "Early integration of tenants, building owners, architects, engineers, city/county officials and construction management team to assure high quality communication throughout duration of the project"
+
+- services:
+  id: 2
+  icon: "bus"
+  title: "Senior Living"
+  details:
+    - "Client and facility CNA Specialist (Comprehensive Needs Assessment)"
+    - "Experts at evaluating and providing for barrier free modifications"
+    - "Resident and construction integration strategies to allow for continued occupancy during construction and renovation"
+    - "Value Engineering based on pre-construction visit and site evaluations to assure the needs of the residents are met"
+    - "Experienced success with HUD and federal specialty projects"
+
+- services:
+  id: 3
+  icon: "fire"
+  title: "Catastrophic Loss"
+  details:
+    - "24/7 Emergency response team for Fire Destruction / Water Damage / Natural Disaster"
+    - "Pre-designated high quality team of architects, engineers, project managers and sub-contractors to quickly address and control time/financial loss damages"
+    - "Site Safety Inspection Services and Value Engineering"
+    - "Rapid response construction services to assure expedient return of normalcy for the client"
+
+- services:
+  id: 4
+  hide: "hidden-xs"
+  icon: ""
+  title: ""
+  details:
+    - ""
+
+
+- services:
+  id: 5
+  icon: "users"
+  title: "Commerical & Multifamily"
+  details:
+    - "Onsite visits with owner and/or investors to understand the dream/vision"
+    - "Highly experienced team of architects, engineers and project managers available to make those dreams come true"
+    - "Pre-Construction pricing, planning and schedule to assure financial and time commitments are clearly understood"
+    - "Superior construction facilitation ongoing from initial site visit to turn key completion that assure the dreams / vision of the client is met."
+
+- services:
+  id: 6
+  hide: "hidden-xs"
+  icon: ""
+  title: ""
+  details:
+    - ""

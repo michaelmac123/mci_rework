@@ -22,13 +22,11 @@
         - if i > 0
           %hr.section-body-spacer.margin-bottomgap20
         .col-md-2.col-xs-12
-          = image_tag "bio-images/MCI-#{bio['name'].parameterize}-bio.png", class: "img-responsive margin-auto", alt: "#{bio['name'].titleize}"
+          = image_tag "bio-images/MCI-#{bio['name'].parameterize}-bio.png", class: "biography-image img-responsive", alt: "#{bio['name'].titleize}"
         .col-md-10.col-xs-12
           %h4.biography-title= bio['name']
           %h5.biography-sub-title= bio['title']
           = bio['description'].html_safe
-
-
 .banner
   .banner-bar
     .container
