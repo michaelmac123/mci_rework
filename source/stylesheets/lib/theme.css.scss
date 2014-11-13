@@ -161,6 +161,9 @@
     margin:       0 auto; } }// <- To center img inside the box
 
 .service {
+  border:{
+    top:                  1px solid lighten($med-blue, 35);
+    bottom:               1px solid lighten($med-blue, 35);}
   &-container {
       margin:             0;
       padding:            0;
@@ -172,33 +175,34 @@
     padding-bottom:       80%;
     text-align:           center; }
   &-text {
+    @include transition(all 250ms ease);
+    @include transform(translate(0,0));
     color:                $med-blue;
     bottom:               0;
     left:                 0;
     padding:              0;
     position:             absolute;
     right:                0;
-    top:                  0; }
+    top:                  0;
+    &:hover {
+      @include transform(translate(0,-20%));
+      .service-content{
+        @include transition(all 275ms ease);
+        opacity:        1; } } }
   &-inner {
-    @include transition(all 250ms ease);
-    @include transform(translate(0,0));
     overflow:           hidden;
     padding:{
       left:             30px;
       right:            30px; }
     position:           absolute;
     top:                30%;
-    width:              100%;
-    &:hover {
-      @include transform(translate(0,-20%));
-      .service-content{
-        @include transition(all 275ms ease);
-        opacity:        1; } } }
+    width:              100%; }
   &-list {
     padding-left:         20px;
     text-align:           left; }
   &-title {
     font:{
+      family:           $upper-class;
       size:             2em; } }
   &-content {
     opacity:            0;

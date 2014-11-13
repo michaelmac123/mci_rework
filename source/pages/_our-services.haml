@@ -7,14 +7,6 @@
         %hr.section-heading-spacer/
         .clearfix
 .content-section-b
-  .container
-    .row
-      .col-md-3.col-sm-6
-        %h3.section-heading.margin-bottomgap0.med-blue
-          Our Services
-        %hr.section-heading-spacer/
-        .clearfix
-
   .row.service
     -data.services.each do |serv|
       %div{ class: "col-md-4 col-xs-12 service-container #{serv['hide']}" }
@@ -24,8 +16,9 @@
               %i{ class: "fa fa-#{serv['icon']} fa-4x" }
               %h6.service-title= serv['title']
               %ul.service-list
-                - serv['details'].each do |details|
-                  %li.service-content= details
+                - unless serv['details'].blank?
+                  - serv['details'].each do |details|
+                    %li.service-content= details
         %hr.section-body-spacer.visible-xs-block.margin-gap0
 
 
