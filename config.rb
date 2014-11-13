@@ -21,11 +21,11 @@ set :relative_links, true
 data.pages.each do |page|
   if page['id'].to_s == '3'
     proxy "/#{(page.name).parameterize}.html", "/project_template.html",
-    :locals => { :name => page.name, :id => page.id },
+    :locals => { :name => page.name, :id => page.id, :page_slogan => page.page_slogan  },
     :ignore => true
   else
     proxy "/#{(page.name).parameterize}.html", "/page_template.html",
-    :locals => { :id => page.id },
+    :locals => {  :name => page.name, :id => page.id, :page_slogan => page.page_slogan },
     :ignore => true
   end
 end

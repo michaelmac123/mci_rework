@@ -36,12 +36,12 @@ p {
 .btn {
   @include border-radius(2px); }
 
-.border-left {
-  border-left:  1px solid darken($bone, 10); }
+.border-left  { border-left:  1px solid darken($bone, 10); }
+.clear-both   { clear: both;    }
+.clear-left   { clear: left;    }
+.clear-right  { clear: right;   }
+.margin-auto  { margin: 0 auto; }
 
-.clear-both { clear: both;}
-.clear-left { clear: left;}
-.clear-right { clear: right;}
 // Overrides
 .headroom {
     -webkit-transition: transform 200ms linear;

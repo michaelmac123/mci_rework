@@ -1,0 +1,48 @@
+- biography:
+  id: 1
+  name: "Ron Mitchell"
+  title: "President, MCI Inc."
+  description:
+    "<p>It could be said that Mitchell Contractors, Inc. and its success is the culmination of Ron Mitchell’s entrepreneurial spirit, a characteristic he says he inherited from his father and grandfather, both successful inventors. Ron has been a lifelong learner, starting out working as a baker by day at age 14, and sleeping in a post office at night. He spent youthful summers on a Montana ranch with his grandfather, and studied computer science in school before it was fashionable. This was the start of a circuitous path to his current credentials in General Contractor Construction Management (GCCM).</p>
+    <p>Ron spent his early years working with Ty Long, owner of he famous Long Painting Co. who taught him that customers are the primary reason for doing business; not money. Long said always give customers the best quality work; that will bring them back. And, stay objective; when you make it personal you do stupid things. These are the operating principles that underlie MCI’s work to this day.</p>
+    <p>MCI’s motto, “Built on Integrity,” is personal for Ron Mitchell. For him it means offering the highest quality to customers, treating workers with respect and acquiring knowledgeable partners to ensure the most effective execution of any task.</p>"
+
+- biography:
+  id: 2
+  name: "Debbie Mitchell"
+  title: "Vice President, MCI Inc."
+  description:
+    "<p>Debbie Mitchell, MCIs Vice President, joined the organization in 1994 before it was incorporated. Debbie brings to MCI her years of experience in real estate, banking and customer service, and she applies them to managing the company’s complex administrative details, personnel and financial workings.</p>
+    <p>In addition to helping Ron build the business from sole proprietorship to its current corporate status, Debbie raised the couple’s four children. Consequently, she excels at keeping administrative balloons in the air.</p>"
+
+- biography:
+  id: 3
+  name: "Merrill Jannison"
+  title: "Vice President, Sales & Marketing"
+  description:
+    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+
+- biography:
+  id: 4
+  name: "Bill Boyer"
+  title: "Sales & Estimating"
+  description:
+    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+
+- biography:
+  id: 5
+  name: "Susan Darr"
+  title: "Office Manager"
+  description:
+    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+
+- biography:
+  id: 6
+  name: "Jim Whitney"
+  title: "Project Manager"
+  description:
+    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"

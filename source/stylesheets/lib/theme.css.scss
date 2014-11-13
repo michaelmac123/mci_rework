@@ -97,7 +97,8 @@
     width:            135px;
     z-index:          20; }
   &-avantar {
-    height:           103%; }
+    @include border-radius(50%);
+    height:           100%; }
   &-client-logo {
     height:           100px;
     left:             -25%;
@@ -157,7 +158,18 @@
   &-image {
     border:       7px solid lighten($med-blue, 35); }
   &-img-responsive {
-    margin:       0 auto; } // <- To center img inside the box
+    margin:       0 auto; } }// <- To center img inside the box
+
+.services{
+  &-box {
+    background-color: rgba($med-blue, .25);
+    display:block;
+    text-align:center; }
+  &-container {
+      margin:0;
+      padding:0;
+      &:nth-of-type(odd) .services-box {
+        background-color: rgba($med-blue, .5); } }
 }
 
 .section-base-heading {
@@ -186,6 +198,18 @@
   font:{
     size:       1.2em; } }
 
+.biography {
+  color:            $med-blue;
+  &-title {
+    color:          darken($med-blue, 15);
+    font:{
+      size:         1.5em; } }
+  &-sub-title {
+    color:          darken($med-blue, 15);
+    font:{
+      size:         1.25em; } }
+}
+
 .project {
   &-outline-list {
     li {
@@ -198,8 +222,8 @@
         margin-top:   10px;
         padding-left: 0;
         &:first-of-type {
-          margin-top: 0; } } } }
-}
+          margin-top: 0; } } } } }
+
 .contact-form {
   &-list {
     li {
@@ -217,8 +241,10 @@
     margin-top:   10px;
     padding-left: 0;
     &:first-of-type {
-      margin-top: 0; } }
-}
+      margin-top: 0; } } }
+
+// @include transform(translate(0,-50%));
+// @include transition( all 250ms ease);
 
 .testimonial {
   color:      rgba($med-blue, .8);

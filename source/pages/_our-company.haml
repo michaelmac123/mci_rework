@@ -1,11 +1,33 @@
 .content-section-a
   .container
-    .row.project
+    .row
+      .col-md-12.col-sm-6
+        %h3.section-heading.margin-bottomgap0.med-blue
+          Our Company
+        %hr.section-heading-spacer/
+        .clearfix
+        %p.clear-left><
+          Mitchell Contractors, Inc. was incorporated in 1996 and has continued to flourish since. MCI’s history cannot be separated from the owner and President Ron Mitchell’s career trajectory that started when he became a licensed contractor 1982. Ron continued to advance his career in 1985 as an employee with industry luminaries like McBride Construction. His skills were literally built via trial by fire as he supervised projects like the 22 week $32million fast track rebuild of a fire damaged Lamb Weston Potato Processing plant to successfully minimize the business’ downtime after catastrophic loss. Soon he was managing other catastrophic loss projects for schools and factories like BMC West and the Christianson Motor Yacht Facility. As Ron evolved and grew his company he took it to the next level and incorporated Mitchell Contractors, Inc. in 1996. He has continued to manage large and small projects with the same intensity and level of expertise that his clients have come to expect.
+
+.content-section-b
+  .container
+    .row
       .col-md-3.col-sm-6
         %h3.section-heading.margin-bottomgap0.med-blue
           Our Staff
         %hr.section-heading-spacer/
         .clearfix
+    - data.biographies.each_with_index do |bio, i|
+      .row.biography.margin-gap10
+        - if i > 0
+          %hr.section-body-spacer.margin-bottomgap20
+        .col-md-2.col-xs-12
+          = image_tag "bio-images/MCI-#{bio['name'].parameterize}-bio.png", class: "img-responsive margin-auto", alt: "#{bio['name'].titleize}"
+        .col-md-10.col-xs-12
+          %h4.biography-title= bio['name']
+          %h5.biography-sub-title= bio['title']
+          = bio['description'].html_safe
+
 
 .banner
   .banner-bar
