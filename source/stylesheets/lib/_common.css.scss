@@ -39,7 +39,9 @@ p {
 .border-left {
   border-left:  1px solid darken($bone, 10); }
 
-
+.clear-both { clear: both;}
+.clear-left { clear: left;}
+.clear-right { clear: right;}
 // Overrides
 .headroom {
     -webkit-transition: transform 200ms linear;

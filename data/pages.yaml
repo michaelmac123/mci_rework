@@ -9,6 +9,14 @@
 - page:
   id: 3
   name: Our Projects
+  projects:
+    - project:
+      id:
+      name:
+      testimonial:
+      projectStory:
+      projectObjective:
+      projectSolution:
 
 - page:
   id: 4

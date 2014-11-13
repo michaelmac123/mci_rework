@@ -19,23 +19,37 @@ set :relative_links, true
 #   page "/admin/*"
 # end
 data.pages.each do |page|
-  proxy "/#{(page.name).parameterize}.html", "/page_template.html",
-  :locals => { :name => page.name },
-  :ignore => true
+  if page['id'].to_s == '3'
+    proxy "/#{(page.name).parameterize}.html", "/project_template.html",
+    :locals => { :name => page.name, :id => page.id },
+    :ignore => true
+  else
+    proxy "/#{(page.name).parameterize}.html", "/page_template.html",
+    :locals => { :id => page.id },
+    :ignore => true
+  end
 end
 
 ###
 # Helpers
 ###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
 helpers do
   def nav_active(page)
     this_page = page_classes.gsub(/\s.+/, '')
     this_page == page ? {:class => "active"} : {}
+  end
+
+  def render_page_partial(s)
+    case s.to_s
+    when '2'
+      partial "pages/our-company"
+    when '4'
+      partial "pages/our-services"
+    when '5'
+      partial "pages/contact-form"
+    else
+      partial "pages/our-company"
+    end
   end
 end
 

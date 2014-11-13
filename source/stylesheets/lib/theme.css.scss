@@ -80,26 +80,7 @@
       max-height:     705px;
       width:          100%; } }
   &-control {
-    z-index:          10;
-  } }
-
-// Header section
-.intro-message {
-  margin:{
-    bottom:           43%;
-    top:              15%; } }
-
-.intro-content {
-  background-color:   rgba($white, .8);
-  top:                10px;
-  position:           relative;
-  h1 {
-    font:{
-      family:         $work-class;
-      size:           5em; }
-    margin:           0;
-    padding:          0;
-    text-shadow:      1px 1px 0px rgba($dark-blue,0.3); } }
+    z-index:          10; } }
 
 .call-out {
   &-section {}
@@ -116,24 +97,13 @@
     width:            135px;
     z-index:          20; }
   &-avantar {
-    height:           103%; } }
-
-
-
-.cta {
-  font-size:  1.75em;
-  &-container {
-  @include float(left, absolute);
-  margin-top: -38%; } }
-
-.intro-divider {
-  border:{
-    top:      0px solid rgba(lighten($gray, 30), .8);
-    bottom:   1px solid rgba(lighten($gray, 10), .8);   } }
-
-.pricing {
-  font:{
-    size:     2em; } }
+    height:           103%; }
+  &-client-logo {
+    height:           100px;
+    left:             -25%;
+    position:         relative;
+    top:              10%;
+    width:            200px; } }
 
 .content-section {
   &-a {
@@ -189,9 +159,6 @@
   &-img-responsive {
     margin:       0 auto; } // <- To center img inside the box
 }
-.first-col {
-  padding:{
-    top:      50px; } }
 
 .section-base-heading {
   color:       $theme-red;
@@ -215,19 +182,43 @@
   margin:       10px 0 5px 0; }
 
 .section-body-text {
-  color:  rgba($med-blue, .75);
+  color:        rgba($med-blue, .75);
   font:{
-    size:   1.2em; } }
+    size:       1.2em; } }
 
-.lead {
-  h4 {
-    font-size:  1em; } }
-
-.lead-point {
-  color:  rgba($med-blue, .75);
-  font:{
-    size:   14px;
-    weight: lighter; } }
+.project {
+  &-outline-list {
+    li {
+      color:          $med-blue;
+      padding-left:   5px;
+      &.list-title {
+        color:          darken($med-blue, 15);
+        font:{
+          size:       1.2em; }
+        margin-top:   10px;
+        padding-left: 0;
+        &:first-of-type {
+          margin-top: 0; } } } }
+}
+.contact-form {
+  &-list {
+    li {
+      color:          $med-blue;
+      padding-left:   5px; } }
+  &-button {
+    font-size:    1.2em;
+  }
+  .list-title,
+  .form-label {
+    color:          darken($med-blue, 15);
+    font:{
+      size:       1.2em;
+      weight:     normal; }
+    margin-top:   10px;
+    padding-left: 0;
+    &:first-of-type {
+      margin-top: 0; } }
+}
 
 .testimonial {
   color:      rgba($med-blue, .8);

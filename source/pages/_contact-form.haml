@@ -1,0 +1,47 @@
+.content-section-a
+  .container
+    .row.contact-form
+      .col-md-4.col-xs-12
+        %h3.section-heading.margin-bottomgap0.med-blue
+          Contact Us
+        %hr.section-heading-spacer/
+        %ul.list-unstyled.contact-form-list.clear-left
+          %li.list-title Address:
+          %li
+            Mitchell Contractors Inc
+            %br/
+            PO Box 167
+            %br/
+            Vashon, WA 98070
+          %li.list-title
+            Email:
+          %li information@mitchellcontractors.com
+      .col-md-5.col-xs-12
+        %h3.section-heading.margin-bottomgap0.med-blue
+          &nbsp;
+        / %hr.section-heading-spacer/
+        .clearfix
+        %form{role: "form"}
+          .form-group
+            %label{ for: "mciInputFirstName", class: 'form-label'} First Name
+            %input{ type: 'text', class: "form-control", id: 'mciInputFirstName', placeholder: "Enter First Name"}
+          .form-group
+            %label{ for: "mciInputLastName", class: 'form-label' } Last Name
+            %input{ type: 'text', class: "form-control", id: 'mciInputLastName', placeholder: "Enter Last Name"}
+          .form-group
+            %label{ for: "mciInputEmail", class: 'form-label' } Email
+            %input{ type: 'email', class: "form-control", id: 'mciInputEmail', placeholder: "Enter Email"}
+          .form-group
+            %label{ for: "mciInputFirstName", class: 'form-label' } Description
+            %textarea{ rows: "3", class: "form-control", id: 'mciInputDescription', placeholder: "Brief Description"}
+          .form-group
+            %button.btn.btn-primary.contact-form-button{ href: "#", type: "submit" }
+              %i.fa.fa-paper-plane
+              Contact Us
+
+.banner
+  .banner-bar
+    .container
+      .row
+        .col-md-12
+          %h2 Getting the job done right, the first time...  on time, on budget!
