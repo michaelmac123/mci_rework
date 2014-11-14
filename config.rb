@@ -18,16 +18,19 @@ set :relative_links, true
 # with_layout :admin do
 #   page "/admin/*"
 # end
+
+# Standard Page route
 data.pages.each do |page|
-  if page['id'].to_s == '3'
-    proxy "/#{(page.name).parameterize}.html", "/project_template.html",
-    :locals => { :name => page.name, :id => page.id, :page_slogan => page.page_slogan  },
-    :ignore => true
-  else
-    proxy "/#{(page.name).parameterize}.html", "/page_template.html",
-    :locals => {  :name => page.name, :id => page.id, :page_slogan => page.page_slogan },
-    :ignore => true
-  end
+  proxy "/#{(page.name).parameterize}.html", "/page_template.html",
+  :locals => {  :name => page.name, :id => page.id, :page_slogan => page.page_slogan },
+  :ignore => true
+end
+
+# Projects Page route
+data.projects.each do |project|
+  proxy "our-projects/#{(project.name).parameterize}.html", "/project_template.html",
+  :locals => {  :name => project.name, :id => project.id, :project_slogan => project.page_slogan },
+  :ignore => true
 end
 
 ###
@@ -43,6 +46,8 @@ helpers do
     case s.to_s
     when '2'
       partial "pages/our-company"
+    when '3'
+      partial "pages/our-projects"
     when '4'
       partial "pages/our-services"
     when '5'

@@ -1,0 +1,34 @@
+- project:
+  id: 1
+  name: "Four Freedom"
+  testimonial:
+    "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
+  story:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat,
+    sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam.
+    Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in
+    hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris."
+  objective:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim."
+  solution:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
+  client: "Four Freedom"
+  architect:  "Mr. Architect"
+  location: "Vashon, WA"
+  duration: "3 months"
+  core_market:
+    - "Senior Living"
+    - "Design Build"
+    - "Collaborative Virtual Building and BIM"
+    - "Sustainable Construction"
+    - "Preconstruction"
