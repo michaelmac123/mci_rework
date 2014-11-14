@@ -1,6 +1,9 @@
 - project:
   id: 1
+  featured: "true" #pretend true false
+  additional_projects: "false" #pretend true false
   name: "Four Freedom"
+  headline: "Brief sector info that sounds very influential"
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
     Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
@@ -23,6 +26,120 @@
     lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
     Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
   client: "Four Freedom"
+  architect:  "Mr. Architect"
+  location: "Vashon, WA"
+  duration: "3 months"
+  core_market:
+    - "Senior Living"
+    - "Design Build"
+    - "Collaborative Virtual Building and BIM"
+    - "Sustainable Construction"
+    - "Preconstruction"
+
+- project:
+  id: 2
+  featured: "false" #pretend true false
+  additional_projects: "true" #pretend true false
+  name: "K2"
+  headline: "Brief sector info that sounds very influential"
+  testimonial:
+    "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
+  story:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat,
+    sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam.
+    Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in
+    hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris."
+  objective:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim."
+  solution:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
+  client: "K2"
+  architect:  "Mr. Architect"
+  location: "Vashon, WA"
+  duration: "3 months"
+  core_market:
+    - "Senior Living"
+    - "Design Build"
+    - "Collaborative Virtual Building and BIM"
+    - "Sustainable Construction"
+    - "Preconstruction"
+
+- project:
+  id: 3
+  featured: "false" #pretend true false
+  additional_projects: "true" #pretend true false
+  name: "Test Project 3"
+  headline:
+  testimonial:
+    "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
+  story:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat,
+    sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam.
+    Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in
+    hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris."
+  objective:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim."
+  solution:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
+  client: "Test Project 3"
+  architect:  "Mr. Architect"
+  location: "Vashon, WA"
+  duration: "3 months"
+  core_market:
+    - "Senior Living"
+    - "Design Build"
+    - "Collaborative Virtual Building and BIM"
+    - "Sustainable Construction"
+    - "Preconstruction"
+
+- project:
+  id: 4
+  featured: "false" #pretend true false
+  additional_projects: "false" #pretend true false
+  name: "Test Project 4"
+  headline: "Brief sector info that sounds very influential"
+  testimonial:
+    "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
+  story:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat,
+    sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam.
+    Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in
+    hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris."
+  objective:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim."
+  solution:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
+    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
+    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
+    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
+  client: "Test Project 4"
   architect:  "Mr. Architect"
   location: "Vashon, WA"
   duration: "3 months"

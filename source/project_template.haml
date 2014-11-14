@@ -7,47 +7,48 @@ body_class: projects
 
 = partial "layouts/header_carousel"
 - data.projects.each do |project|
+  -if locals[:id] == project['id']
+    / Page Content
+    .container.call-out-section
+      .row
+        .col-md-2.col-xs-4.text-center
+          .call-out-circle.hidden-xs= image_tag "client-logos/logo-#{project['name'].parameterize}.png", alt: "Mitchell Contracting | #{project['name']}", class: 'call-out-client-logo'
+        .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
+          %h3.call-out-content "#{project['testimonial']}"
+    .content-section-a
+      .container
+        .row.project
+          .col-md-3.col-sm-6
+            %h3.section-heading.margin-bottomgap0.med-blue
+              Project Outline
+            %hr.section-heading-spacer/
+            .clearfix
+            %ul.list-unstyled.project-outline-list
+              %li.list-title Client
+              %li= project['client']
+              %li.list-title Architect
+              %li= project['architect']
+              %li.list-title Location
+              %li= project['location']
+              %li.list-title Duration
+              %li= project['duration']
+              %li.list-title Core Market
+              - project['core_market'].each do |core|
+                %li= core
 
-  / Page Content
-  .container.call-out-section
-    .row
-      .col-md-2.col-xs-4.text-center
-        .call-out-circle.hidden-xs= image_tag "client-logos/logo-#{project['name'].parameterize}.png", alt: "Mitchell Contracting", class: 'call-out-client-logo'
-      .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
-        %h3.call-out-content "#{project['testimonial']}"
-  .content-section-a
-    .container
-      .row.project
-        .col-md-3.col-sm-6
-          %h3.section-heading.margin-bottomgap0.med-blue
-            Project Outline
-          %hr.section-heading-spacer/
-          .clearfix
-          %ul.list-unstyled.project-outline-list
-            %li.list-title Client
-            %li= project['client']
-            %li.list-title Architect
-            %li= project['architect']
-            %li.list-title Location
-            %li= project['location']
-            %li.list-title Duration
-            %li= project['duration']
-            %li.list-title Core Market
-            - project['core_market'].each do |core|
-              %li= core
+          .col-md-8.col-sm-6
+            %h3.section-heading.margin-bottomgap0.med-blue Project Story
+            %hr.section-heading-spacer/
+            %p.section-body-text.clear-left
+              .col-md-5.pull-right= image_tag "project-images/MCI-senior-living-1.jpg", class: "img-responsive project-image"
+              = project['story']
+            %h3.section-heading.margin-bottomgap0.med-blue Project Objective
+            %hr.section-heading-spacer/
+            %p.section-body-text.clear-left= project['objective']
+            %h3.section-heading.margin-bottomgap0.med-blue Project Solution
+            %hr.section-heading-spacer/
+            %p.section-body-text.clear-left= project['solution']
 
-        .col-md-8.col-sm-6
-          %h3.section-heading.margin-bottomgap0.med-blue Project Story
-          %hr.section-heading-spacer/
-          %p.section-body-text.clear-left
-            .col-md-5.pull-right= image_tag "project-images/MCI-senior-living-1.jpg", class: "img-responsive project-image"
-            = project['story']
-          %h3.section-heading.margin-bottomgap0.med-blue Project Objective
-          %hr.section-heading-spacer/
-          %p.section-body-text.clear-left= project['objective']
-          %h3.section-heading.margin-bottomgap0.med-blue Project Solution
-          %hr.section-heading-spacer/
-          %p.section-body-text.clear-left= project['solution']
 .banner
   .banner-bar
     .container
