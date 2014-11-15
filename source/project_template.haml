@@ -17,6 +17,9 @@ body_class: projects
           %h3.call-out-content "#{project['testimonial']}"
     .content-section-a
       .container
+        .row
+          .col-md-12.col-sm-12
+            %h2.section-heading.margin-gap0.med-blue= project['client']
         .row.project
           .col-md-3.col-sm-6
             %h3.section-heading.margin-bottomgap0.med-blue
@@ -48,6 +51,11 @@ body_class: projects
             %h3.section-heading.margin-bottomgap0.med-blue Project Solution
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left= project['solution']
+            %hr.section-body-spacer.padding-bottomgap10
+            .col-md-4= image_tag "project-images/MCI-senior-living-1.jpg", class: "img-responsive project-image"
+            .col-md-4= image_tag "project-images/MCI-senior-living-1.jpg", class: "img-responsive project-image"
+            .col-md-4= image_tag "project-images/MCI-senior-living-1.jpg", class: "img-responsive project-image"
+
 
 .banner
   .banner-bar

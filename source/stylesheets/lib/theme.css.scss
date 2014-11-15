@@ -187,7 +187,7 @@
     &:hover {
       @include transform(translate3d(0,-20%,0));
       .service-content{
-        @include transition(all 275ms ease);
+        @include transition(all 700ms ease);
         opacity:        1; } } }
   &-inner {
     overflow:           hidden;
