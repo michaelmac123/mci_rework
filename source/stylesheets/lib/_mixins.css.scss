@@ -2,6 +2,10 @@
   float:    $float;
   position: $pos;}
 
+@mixin font-smoothing( $webkit: antialiased, $moz: grayscale) {
+  -webkit-font-smoothing:   $webkit;
+  -moz-osx-font-smoothing:  $moz; }
+
 @mixin transform($properties) {
   -webkit-transform:  $properties; /* Safari and Chrome */
   -moz-transform:     $properties; /* Firefox */

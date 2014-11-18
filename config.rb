@@ -38,8 +38,7 @@ end
 ###
 helpers do
   def nav_active(page)
-    this_page = page_classes.gsub(/\s.+/, '')
-    this_page == page ? {:class => "active"} : {}
+    current_page.url == "#{page}" ? {:class => "active"} : {}
   end
 
   def render_page_partial(s)

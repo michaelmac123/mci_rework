@@ -7,7 +7,7 @@ body_class: projects
 
 = partial "layouts/header_carousel"
 - data.projects.each do |project|
-  -if locals[:id] == project['id']
+  - if locals[:id] == project['id']
     / Page Content
     .container.call-out-section
       .row

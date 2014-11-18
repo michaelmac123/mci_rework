@@ -13,3 +13,9 @@ $(document).ready () ->
 
   ).init()
   return
+
+# Amount of images
+imageCount = 2
+randomNum = Math.floor((Math.random() * imageCount) + 1)
+$(".ran-img").removeClass('hide')
+$(".ran-img").attr "src", "images/bio-avatars/MCI-bio-avatar-" + randomNum + ".png"
