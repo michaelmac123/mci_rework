@@ -19,3 +19,6 @@ imageCount = 2
 randomNum = Math.floor((Math.random() * imageCount) + 1)
 $(".ran-img").removeClass('hide')
 $(".ran-img").attr "src", "images/bio-avatars/MCI-bio-avatar-" + randomNum + ".png"
+
+#Check for svg support
+$(".mci-logo-svg").attr "src", "images/logo.png"  unless Modernizr.svg

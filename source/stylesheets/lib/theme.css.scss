@@ -40,11 +40,21 @@
     &:hover {
       color:        lighten($bone, 15); }
     &-img {
-      height:       75px; } }
+      height:       75px; }
+    &-svg {
+      width:        220px;
+      .mci-logo-mitchell{
+        fill:       $logo-red; }
+      .mci-logo-construction{
+        fill:       $white; }
+      .mci-logo-icon{
+        fill:       $white; } }
+     }
   .navbar-toggle {
     background-color: rgba($bone, .5);
     margin-top:     7.5%;
     padding:        10px; } }
+
 
 .carousel {
   &-container {

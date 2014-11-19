@@ -55,6 +55,15 @@ helpers do
       partial "pages/our-company"
     end
   end
+
+  def inline_svg(path, opts={})
+    file = File.open("source/images/#{path}.svg", "r")
+    klass = opts[:class] ||= ""
+    klass << " #{path}"
+    svg = file.read
+    svg = content_tag :span, svg, class: klass, title: opts[:title] || ""
+  end
+
 end
 
 # Use LiveReload
