@@ -46,7 +46,9 @@
       - if project['additional_projects'] == "true"
         .row.project
           .col-md-4.col-sm-12
-            %h3.project-section-heading.margin-bottomgap0.med-blue= project['client']
+            %h3.margin-bottomgap0
+              = link_to "#{project['client']}","our-projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
+              / = project['client']
         .row.project-featured
           .col-md-4.col-xs-12= image_tag "project-images/MCI-steelframing-1.png", class: "img-responsive"
           .col-md-8.col-xs-12

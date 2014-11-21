@@ -33,6 +33,8 @@ data.projects.each do |project|
   :ignore => true
 end
 
+page "/press-releases/*", :layout => false
+
 ###
 # Helpers
 ###
@@ -50,6 +52,8 @@ helpers do
     when '4'
       partial "pages/our-services"
     when '5'
+      partial "pages/our-news"
+    when '6'
       partial "pages/contact-form"
     else
       partial "pages/our-company"

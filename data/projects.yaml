@@ -2,7 +2,7 @@
   id: 1
   featured: "true" #pretend true false
   additional_projects: "false" #pretend true false
-  name: "Four Freedom"
+  name: "Four Freedoms"
   headline: "Brief sector info that sounds very influential"
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
@@ -35,6 +35,10 @@
     - "Collaborative Virtual Building and BIM"
     - "Sustainable Construction"
     - "Preconstruction"
+  images:
+    - 1
+    - 2
+    - 3
 
 - project:
   id: 2
@@ -73,6 +77,10 @@
     - "Collaborative Virtual Building and BIM"
     - "Sustainable Construction"
     - "Preconstruction"
+  images:
+    - 1
+    - 2
+    - 3
 
 - project:
   id: 3
@@ -111,6 +119,10 @@
     - "Collaborative Virtual Building and BIM"
     - "Sustainable Construction"
     - "Preconstruction"
+  images:
+    - 1
+    - 2
+    - 3
 
 - project:
   id: 4
@@ -149,3 +161,7 @@
     - "Collaborative Virtual Building and BIM"
     - "Sustainable Construction"
     - "Preconstruction"
+  images:
+    - 1
+    - 2
+    - 3

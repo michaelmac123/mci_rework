@@ -1,0 +1,25 @@
+.content-section-a
+  .container
+    .row
+      .col-md-3.col-sm-6
+        %h3.section-heading.margin-bottomgap0.med-blue
+          In the News
+        %hr.section-heading-spacer/
+        .clearfix
+    - data.news.each_with_index do |news_article, i|
+      .row.news-articles.margin-gap10
+        - if i > 0
+          %hr.section-body-spacer.margin-bottomgap20
+        .col-md-3.col-xs-12
+          = image_tag "project-images/MCI-#{news_article['name'].parameterize}-1.jpg", class: "news-articles-image img-responsive", alt: "#{news_article['name'].titleize}"
+        .col-md-9.col-xs-12
+          %h4.news-articles-title= news_article['name']
+          %h5.news-articles-sub-title= news_article['title']
+          = truncate(news_article['details'].html_safe, length: 600)
+          %a{ href: "images/press-releases/MCI-#{news_article['name'].parameterize}-1.pdf", class: "margin-leftgap10", target: "_blank" } Read More
+.banner
+  .banner-bar
+    .container
+      .row
+        .col-md-12
+          %h2 Getting the job done right, the first time...  on time, on budget!
