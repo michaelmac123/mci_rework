@@ -2,10 +2,11 @@
 
 .container.call-out-section
   .row
-    / .col-md-2.col-xs-4.text-center
-    /   .call-out-circle.hidden-xs= image_tag 'bio-avatars/MCI-bio-avatar-1.png', alt: "Mitchell Contracting", class: 'ran-img call-out-avantar hide'
-    .col-md-12.col-xs-12
-      %h3.call-out-content= locals[:page_slogan]
+    .col-md-10.col-md-offset-1.col-xs-12
+      %h3.call-out-content.text-center
+        %i.fa.fa-quote-left
+        %i= locals[:page_slogan]
+        %i.fa.fa-quote-right
 
 .content-section-a
   .container

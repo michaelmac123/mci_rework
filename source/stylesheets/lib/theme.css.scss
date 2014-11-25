@@ -100,6 +100,7 @@
 .call-out {
   &-section {}
   &-content {
+    color:            $theme-red;
     margin:           20px 0; }
   &-circle {
     @include border-radius(50%);
@@ -174,6 +175,11 @@
     border:       7px solid lighten($med-blue, 35); }
   &-img-responsive {
     margin:       0 auto; } // <- To center img inside the box
+  &-caption {
+    background-color:lighten($med-blue, 35);
+    color:        $med-blue;
+    font-size:    1.25em;
+    padding:      10px; }
   &-base-heading {
     color:       $theme-red;
     font:{

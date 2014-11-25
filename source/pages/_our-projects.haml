@@ -31,8 +31,11 @@
 
     .container.call-out-section
       .row
-        .col-md-12.col-xs-12
-          %h3.call-out-content= locals[:page_slogan]
+        .col-md-10.col-md-offset-1.col-xs-12
+          %h3.call-out-content.text-center
+            %i.fa.fa-quote-left
+            %i= locals[:page_slogan]
+            %i.fa.fa-quote-right
     .content-section-a
       .container
         .row
