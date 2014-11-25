@@ -39,6 +39,22 @@
   @if $ms       {-ms-border-radius:     $radius;}
   border-radius: $radius; }
 
+
+// Resize  modal widths.
+// Default width is 560px
+@mixin modal-width($widths: (360 sm) (660 med) (760 lg) (860 xlg) (960 xxlg) ) {
+  @each $wd in $widths {
+    $width:   nth($wd, 1);
+    $name:    nth($wd, 2);
+    &.modal-#{$name} {
+      width: #{$width}px;
+      margin-left:-#{$width/2}px; } } }
+
+// increase modal widths
+*[class*="modal-"] {
+  @include modal-width(); }
+
+
 $margin-vars: ( 0 3 5 10 15 20 25 30 35 40);
 *[class*="margin-gap"] {
   @include gapmaker( $sizes:( $margin-vars ), $sides: (top right bottom left) ); }

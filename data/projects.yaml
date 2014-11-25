@@ -42,6 +42,9 @@
     - 4
     - 5
     - 6
+    - 7
+    - 8
+    - 9
 
 - project:
   id: 2
@@ -49,7 +52,7 @@
   additional_projects: "true" #pretend true false
   name: "Car Quest"
   project_name: "Car Quest"
-  headline: "Brief sector info that sounds very influential"
+  headline: "Car Quest Showroom Build Out"
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
     Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
@@ -85,6 +88,12 @@
     - 1
     - 2
     - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
 
 - project:
   id: 3
