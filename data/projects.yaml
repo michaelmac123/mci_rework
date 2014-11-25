@@ -4,7 +4,7 @@
   additional_projects: "false" #pretend true false
   name: "Four Freedoms"
   project_name: "Four Freedoms House of Seattle"
-  headline: "Brief sector info that sounds very influential"
+  headline: "Four Freedoms House of Seattle"
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
     Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
@@ -39,6 +39,9 @@
     - 1
     - 2
     - 3
+    - 4
+    - 5
+    - 6
 
 - project:
   id: 2

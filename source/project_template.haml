@@ -9,17 +9,32 @@ body_class: projects
   - if locals[:id] == project['id']
     / Header
     .carousel-container
-      .carousel{ data:{ride:"carousel" } }
+      #carousel-projects-header.carousel.slide{ data:{ride:"carousel" } }
+
         .carousel-inner{role: "listbox"}
           - project['images'].each_with_index do |image, i|
-            .item{class: i < 1 ? "active" : "" }
-              = image_tag "project-images/MCI-#{project['name']}-#{image}.jpg", alt: "Mitchell Contracting | #{project['name']}", class: 'img-responsive'
-              .carousel-caption
-                .carousel-caption-content
-                  %h2.work-class= project['market_sector']
-                  %h3
-                    -unless project['headline'].blank?
-                      %i= project['headline']
+            - unless i > 2
+              .item{class: i < 1 ? "active" : "" }
+                = image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-#{image}.jpg", alt: "Mitchell Contracting | #{project['name']}", class: 'img-responsive'
+
+          .carousel-caption
+            .carousel-caption-content
+              %h2.work-class= project['headline']
+              %h3
+                %i= project['market_sector']
+
+          %ol.carousel-indicators
+            - project['images'].each_with_index do |image, i|
+              - unless i >2
+                %li{ class: i < 1 ? "active" : "", data:{target:"#carousel-projects-header", slide:{to:"i"}}}
+
+        %a.left.carousel-control{ href: "#carousel-projects-header", role: "button", data:{slide: "prev"}}
+          %span.glyphicon.glyphicon-chevron-left
+          %span.sr-only Previous
+        %a.right.carousel-control{ href:"#carousel-projects-header", role:"button", data:{slide:"next"}}
+          %span.glyphicon.glyphicon-chevron-right
+          %span.sr-only Next
+
 
     / Page Content
     .container.call-out-section
@@ -70,7 +85,7 @@ body_class: projects
             %h3.section-heading.margin-bottomgap0.med-blue Project Story
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left
-              .col-md-5.pull-right= image_tag "project-images/MCI-#{project['name'].parameterize}-1.jpg", class: "img-responsive project-image"
+              = image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-3.jpg", class: "img-responsive project-image col-md-5 pull-right"
               = project['story']
             %h3.section-heading.margin-bottomgap0.med-blue Project Objective
             %hr.section-heading-spacer/
@@ -79,7 +94,8 @@ body_class: projects
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left= project['solution']
             %hr.section-body-spacer.padding-bottomgap10
-            .col-md-4= image_tag "project-images/#{project['name'].parameterize}-2.jpg", class: "img-responsive project-image"
-            .col-md-4= image_tag "project-images/MCI-#{project['name'].parameterize}-3.jpg", class: "img-responsive project-image"
-            .col-md-4= image_tag "project-images/MCI-#{project['name'].parameterize}-4.jpg", class: "img-responsive project-image"
+            - project['images'].each_with_index do |image, i|
+              - if i > 3
+                .col-md-6= image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-#{i}.jpg", class: "img-responsive project-image"
+
 = partial "layouts/bottom_banner"
