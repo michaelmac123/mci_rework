@@ -82,11 +82,4 @@ body_class: projects
             .col-md-4= image_tag "project-images/#{project['name'].parameterize}-2.jpg", class: "img-responsive project-image"
             .col-md-4= image_tag "project-images/MCI-#{project['name'].parameterize}-3.jpg", class: "img-responsive project-image"
             .col-md-4= image_tag "project-images/MCI-#{project['name'].parameterize}-4.jpg", class: "img-responsive project-image"
-
-
-.banner
-  .banner-bar
-    .container
-      .row
-        .col-md-12
-          %h2 Getting the job done right, the first time...  on time, on budget!
+= partial "layouts/bottom_banner"

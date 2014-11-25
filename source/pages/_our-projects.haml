@@ -1,31 +1,32 @@
 - data.projects.each do |project|
   - if project['featured'] == "true"
     / Header
-    #carousel-project-header.carousel.slide{ data:{ride:"carousel" } }
-      %ol.carousel-indicators
-        %li.active{ data:{target:"#carousel-project-header", slide:{to:"0"}}}
-        %li{ data:{target:"#carousel-project-header", slide:{to:"1"}}}
-        %li{ data:{target:"#carousel-project-header", slide:{to:"2"}}}
+    .carousel-container
+      #carousel-projects-header.carousel.slide{ data:{ride:"carousel" } }
+        %ol.carousel-indicators
+          %li.active{ data:{target:"#carousel-projects-header", slide:{to:"0"}}}
+          %li{ data:{target:"#carousel-projects-header", slide:{to:"1"}}}
+          %li{ data:{target:"#carousel-projects-header", slide:{to:"2"}}}
 
-      .carousel-container
-        .carousel{ data:{ride:"carousel" } }
-          .carousel-inner{role: "listbox"}
-            - project['images'].each_with_index do |image, i|
-              .item{class: i < 1 ? "active" : "" }
-                = image_tag "project-images/MCI-#{project['name'].parameterize}-#{image}.jpg", alt: "Mitchell Contracting | #{project['name']}", class: 'img-responsive'
-                .carousel-caption
-                  .carousel-caption-content
-                    %h2.work-class= project['market_sector']
-                    %h3
-                      -unless project['headline'].blank?
-                        %i= project['headline']
-      %a.left.carousel-control{ href: "#carousel-project-header", role: "button", data:{slide: "prev"}}
-        %span.glyphicon.glyphicon-chevron-left
-        %span.sr-only Previous
+        .carousel-inner{role: "listbox"}
+          - project['images'].each_with_index do |image, i|
+            .item{class: i < 1 ? "active" : "" }
+              = image_tag "project-images/MCI-#{project['name'].parameterize}-#{image}.jpg", alt: "Mitchell Contracting | #{project['name']}", class: 'img-responsive'
+              .carousel-caption
+                .carousel-caption-content
+                  %h2.work-class= project['market_sector']
+                  %h3
+                    -unless project['headline'].blank?
+                      %i= project['headline']
 
-      %a.right.carousel-control{ href:"#carousel-project-header", role:"button", data:{slide:"next"}}
-        %span.glyphicon.glyphicon-chevron-right
-        %span.sr-only Next
+        %a.left.carousel-control{ href: "#carousel-projects-header", role: "button", data:{slide: "prev"}}
+          %span.glyphicon.glyphicon-chevron-left
+          %span.sr-only Previous
+
+        %a.right.carousel-control{ href:"#carousel-projects-header", role:"button", data:{slide:"next"}}
+          %span.glyphicon.glyphicon-chevron-right
+          %span.sr-only Next
+
 
 
     .container.call-out-section
@@ -74,12 +75,12 @@
             %h3.section-heading.margin-bottomgap0.med-blue Project Story
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left
-              .col-md-5.pull-right= image_tag "project-images/MCI-senior-living-1.jpg", class: "img-responsive project-image"
+              = image_tag "project-images/MCI-senior-living-1.jpg", class: "img-responsive project-image col-md-5 pull-right"
               = project['story']
             %h3.section-heading.margin-bottomgap0.med-blue Project Objective
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left= project['objective']
-            %h3.section-heading.margin-bottomgap0.med-blue Project Solution
+            %h3.section-heading.margin-bottomgap0.med-blue Project Result
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left= project['solution']
 
@@ -93,8 +94,7 @@
         .row.project
           .col-md-4.col-sm-12
             %h3.margin-bottomgap0
-              = link_to "#{project['client']}","our-projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
-              / = project['client']
+              = link_to "#{project['name']}","our-projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
         .row.project-featured
           .col-md-4.col-xs-12= image_tag "project-images/MCI-steelframing-1.png", class: "img-responsive"
           .col-md-8.col-xs-12
@@ -104,10 +104,3 @@
             %p.section-body-text.clear-left><
               = truncate(project['story'], length: 600)
               = link_to "Learn More","our-projects/#{project['name'].parameterize}", class: "margin-leftgap10"
-
-.banner
-  .banner-bar
-    .container
-      .row
-        .col-md-12
-          %h2 Getting the job done right, the first time...  on time, on budget!

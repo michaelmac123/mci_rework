@@ -2,19 +2,10 @@
 
 .container.call-out-section
   .row
-    / .col-md-2.col-xs-4.text-center
-    /   .call-out-circle.hidden-xs= image_tag 'bio-avatars/MCI-bio-avatar-1.png', alt: "Mitchell Contracting", class: 'ran-img call-out-avantar hide'
     .col-md-12.col-xs-12
       %h3.call-out-content= locals[:page_slogan]
 
-.content-section-a
-  .container
-    .row
-      .col-md-3.col-sm-6
-        %h3.section-heading.margin-bottomgap0.med-blue
-          Our Services
-        %hr.section-heading-spacer/
-        .clearfix
+
 .content-section-b
   .row.service
     -data.services.each do |serv|
@@ -29,12 +20,3 @@
                   - serv['details'].each do |details|
                     %li.service-content= details
         %hr.section-body-spacer.visible-xs-block.margin-gap0
-
-
-
-.banner
-  .banner-bar
-    .container
-      .row
-        .col-md-12
-          %h2 Getting the job done right, the first time...  on time, on budget!

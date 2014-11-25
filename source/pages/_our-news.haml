@@ -26,9 +26,3 @@
           %h5.news-articles-sub-title= news_article['title']
           = truncate(news_article['details'].html_safe, length: 600)
           %a{ href: "images/press-releases/MCI-#{news_article['name'].parameterize}-1.pdf", class: "margin-leftgap10", target: "_blank" } Read More
-.banner
-  .banner-bar
-    .container
-      .row
-        .col-md-12
-          %h2 Getting the job done right, the first time...  on time, on budget!

@@ -1,6 +1,6 @@
 - page:
   id: 1
-  name: Our Home
+  name: Home
   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
 
 - page:
@@ -12,14 +12,6 @@
   id: 3
   name: Our Projects
   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
-  projects:
-    - project:
-      id:
-      name:
-      testimonial:
-      projectStory:
-      projectObjective:
-      projectSolution:
 
 - page:
   id: 4

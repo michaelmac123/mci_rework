@@ -63,8 +63,8 @@
     text-align:         center; }
   &-caption {
     bottom:           10%;
-    left:             35%;
-    right:            2%;
+    left:             50%;
+    right:            10%;
     width:            auto; }
   &-indicators {
     bottom:           50px; }
@@ -307,7 +307,8 @@
   &-image {
     @include border-radius(1px);
     border:         3px solid lighten($med-blue, 20);
-    margin:         0 auto; } }
+    margin:         0 auto;
+    padding:        0; } }
 
 .contact-form {
   &-list {

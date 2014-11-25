@@ -43,20 +43,20 @@ helpers do
     current_page.url == "#{page}" ? {:class => "active"} : {}
   end
 
-  def render_page_partial(s)
+  def render_page_partial(s, ps=nil)
     case s.to_s
     when '2'
-      partial "pages/our-company"
+      partial "pages/our-company", :locals => {:id => s, :page_slogan => ps }
     when '3'
-      partial "pages/our-projects"
+      partial "pages/our-projects", :locals => {:id => s, :page_slogan => ps }
     when '4'
-      partial "pages/our-services"
+      partial "pages/our-services", :locals => {:id => s, :page_slogan => ps }
     when '5'
-      partial "pages/our-news"
+      partial "pages/our-news", :locals => {:id => s, :page_slogan => ps }
     when '6'
-      partial "pages/contact-form"
+      partial "pages/contact-form", :locals => {:id => s, :page_slogan => ps }
     else
-      partial "pages/our-company"
+      partial "pages/our-company", :locals => {:id => s, :page_slogan => ps }
     end
   end
 

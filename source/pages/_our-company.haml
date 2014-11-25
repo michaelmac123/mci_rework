@@ -2,8 +2,11 @@
 
 .container.call-out-section
   .row
-    .col-md-12.col-xs-12
-      %h3.call-out-content= locals[:page_slogan]
+    .col-md-9.col-xs-12
+      %h3.call-out-content
+        %i.fa.fa-quote-left
+        %i= locals[:page_slogan]
+        %i.fa.fa-quote-right
 
 .content-section-a
   .container
@@ -14,8 +17,18 @@
         %hr.section-heading-spacer/
         .clearfix
         %p.clear-left><
-          Mitchell Contractors, Inc. was incorporated in 1996 and has continued to flourish since. MCI’s history cannot be separated from the owner and President Ron Mitchell’s career trajectory that started when he became a licensed contractor 1982. Ron continued to advance his career in 1985 as an employee with industry luminaries like McBride Construction. His skills were literally built via trial by fire as he supervised projects like the 22 week $32million fast track rebuild of a fire damaged Lamb Weston Potato Processing plant to successfully minimize the business’ downtime after catastrophic loss. Soon he was managing other catastrophic loss projects for schools and factories like BMC West and the Christianson Motor Yacht Facility. As Ron evolved and grew his company he took it to the next level and incorporated Mitchell Contractors, Inc. in 1996. He has continued to manage large and small projects with the same intensity and level of expertise that his clients have come to expect.
+          From the inception, Ron Mitchell has infused a culture that readily prides itself on 3 values:
+        %ul.biography-list
+          %li
+            %b Customer Satisfaction:
+            We believe our clients are the reason for our success and know that our clients of today will be our clients of the future
 
+          %li
+            %b Integrity:
+            We value our entire team and work together to drive client solutions and overall vision
+          %li
+            %b Safety:
+            Safety is our number one priority on all projects for our team and our clients
 .content-section-b
   .container
     .row
@@ -34,9 +47,3 @@
           %h4.biography-title= bio['name']
           %h5.biography-sub-title= bio['title']
           = bio['description'].html_safe
-.banner
-  .banner-bar
-    .container
-      .row
-        .col-md-12
-          %h2 Getting the job done right, the first time...  on time, on budget!

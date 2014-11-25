@@ -10,7 +10,7 @@
 - services:
   id: 2
   icon: "bus"
-  title: "Senior Living"
+  title: "Senior Living & Multifamily"
   details:
     - "Client and facility CNA Specialist (Comprehensive Needs Assessment)"
     - "Experts at evaluating and providing for barrier free modifications"
@@ -28,16 +28,16 @@
 
 - services:
   id: 4
-  hide: "hidden-xs"
+  hide:
   icon: ""
-  title: ""
+  title: "Industrial Support Services"
   details:
 
 
 - services:
   id: 5
   icon: "users"
-  title: "Commerical & Multifamily"
+  title: "Commerical"
   details:
     - "Onsite visits with owner and/or investors to understand the dream/vision"
     - "Highly experienced team of architects, engineers and project managers available to make those dreams come true"
@@ -45,7 +45,7 @@
 
 - services:
   id: 6
-  hide: "hidden-xs"
+  hide:
   icon: ""
-  title: ""
+  title: "Historical Renovation"
   details:

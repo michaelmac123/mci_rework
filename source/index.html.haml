@@ -24,29 +24,19 @@ body_class: index
         %hr.section-heading-spacer
         .clearfix
         %p.section-body-text><
-          Mitchell Construction was founded by President, Ron Mitchell over 30 years ago. Mitchell’s clients are the number one priority-we attribute all success to their on-going business with us.  Our company culture is entirely about building and nurturing relationships, customer satisfaction is at the cornerstone of our success.
+          Mitchell Construction was founded by CEO/President, Ron Mitchell over 30 years ago. Clients are the number one priority-we attribute all success to their on-going business with us.  Our company culture is entirely about building and nurturing relationships, customer satisfaction is at the cornerstone of our success.
         %p.section-body-text><
           We have a strong team with a dynamic style and ability to cut through the chaos of demanding projects, while meeting and exceeding customer expectations. We pride ourselves in having a strong work ethic, winning attitude coupled with an acute attention to detail.
       .col-md-6.col-sm-6.pull-right
         = image_tag 'project-images/MCI-senior-living-2.png', class: "content-section-image img-responsive", alt: "Mitchell Construction"
-        %p.text-center.work-class Project Specific Caption
+        %p.content-section-caption.text-center.work-class Bitter Lake Bistro TI
 
 .content-section-b
   .container
     .row
-      .col-md-8.col-sm-8
-        %h2.section-heading.margin-bottomgap0.med-blue Our first client is still one of our client.
-        %hr.section-heading-spacer
+      .col-md-12.col-sm-12.text-center
+        %h2.section-heading.margin-bottomgap0.med-blue Our clients 30 years ago are still our clients today.
+        %hr.section-body-spacer
         .clearfix
     = partial "layouts/client_logos"
-    .row
-      %hr.section-body-spacer
-      .col-lg-12.col-sm-6.text-center
-        %h3.section-base-heading Something about clients, Something about clients, Something about clients
-
-.banner
-  .banner-bar
-    .container
-      .row
-        .col-md-12
-          %h2 Getting the job done right, the first time...  on time, on budget!
+= partial "layouts/bottom_banner"

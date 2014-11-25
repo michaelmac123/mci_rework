@@ -4,4 +4,6 @@ body_class: projects
 ---
 = partial "layouts/navigation"
 
-= render_page_partial(locals[:id])
+= render_page_partial(locals[:id], locals[:page_slogan])
+
+= partial "layouts/bottom_banner"
