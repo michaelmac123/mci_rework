@@ -1,0 +1,25 @@
+-# Projects Carousel
+.carousel-container
+  #carousel-projects-header.carousel.slide{ data:{ride:"carousel" } }
+    .carousel-caption
+      .carousel-caption-content
+        %h2.work-class= project['headline']
+        %h3
+          %i= project['market_sector']
+
+    .carousel-inner{role: "listbox"}
+      - project['images'].each_with_index do |image, i|
+        .item{class: i < 1 ? "active" : "" }
+          = link_to (image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-#{image}.jpg", alt: "Mitchell Contracting | #{project['name']}", class: 'img-responsive'), "our-projects/#{project['name'].parameterize}"
+
+
+      %ol.carousel-indicators
+        - project['images'].each_with_index do |image, i|
+          %li{ class: i < 1 ? "active" : "", data:{target:"#carousel-projects-header", slide:{to:"#{i}"}}}
+
+    %a.left.carousel-control{ href: "#carousel-projects-header", role: "button", data:{slide: "prev"}}
+      %span.glyphicon.glyphicon-chevron-left
+      %span.sr-only Previous
+    %a.right.carousel-control{ href:"#carousel-projects-header", role:"button", data:{slide:"next"}}
+      %span.glyphicon.glyphicon-chevron-right
+      %span.sr-only Next

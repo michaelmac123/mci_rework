@@ -7,34 +7,7 @@ body_class: projects
 
 - data.projects.each do |project|
   - if locals[:id] == project['id']
-    / Header
-    .carousel-container
-      #carousel-projects-header.carousel.slide{ data:{ride:"carousel" } }
-
-        .carousel-inner{role: "listbox"}
-          - project['images'].each_with_index do |image, i|
-            - unless i > 2
-              .item{class: i < 1 ? "active" : "" }
-                = image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-#{image}.jpg", alt: "Mitchell Contracting | #{project['name']}", class: 'img-responsive'
-
-          .carousel-caption
-            .carousel-caption-content
-              %h2.work-class= project['headline']
-              %h3
-                %i= project['market_sector']
-
-          %ol.carousel-indicators
-            - project['images'].each_with_index do |image, i|
-              - unless i >2
-                %li{ class: i < 1 ? "active" : "", data:{target:"#carousel-projects-header", slide:{to:"i"}}}
-
-        %a.left.carousel-control{ href: "#carousel-projects-header", role: "button", data:{slide: "prev"}}
-          %span.glyphicon.glyphicon-chevron-left
-          %span.sr-only Previous
-        %a.right.carousel-control{ href:"#carousel-projects-header", role:"button", data:{slide:"next"}}
-          %span.glyphicon.glyphicon-chevron-right
-          %span.sr-only Next
-
+    = partial "layouts/projects_carousel", :locals => {:project => project}
 
     / Page Content
     .container.call-out-section
