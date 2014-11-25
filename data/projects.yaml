@@ -6,8 +6,8 @@
   project_name: "Four Freedoms House of Seattle"
   headline: "Four Freedoms House of Seattle"
   testimonial:
-    "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
+    "...the client was pleased that this size of a
+     project was completed on time, on budget and the results exceeded expectations."
   story:
     "Mitchell Contractors completed the plus 1 year project at the Four Freedoms House of Seattle and
     Henry M. Jackson Apartments owned and ran by Prudent Properties.  It is located on Bitter Lake in North Seattle."
@@ -140,7 +140,7 @@
 - project:
   id: 4
   featured: "false" #pretend true false
-  additional_projects: "false" #pretend true false
+  additional_projects: "true" #pretend true false
   name: "Vashon Dental Clinic"
   project_name: "Dental Clinic Renovation"
   headline: "Brief sector info that sounds very influential"
@@ -176,5 +176,3 @@
     - "Add SF with Additional Operatories"
   images:
     - 1
-    - 2
-    - 3

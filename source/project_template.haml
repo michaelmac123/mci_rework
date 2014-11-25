@@ -48,7 +48,7 @@ body_class: projects
               %li= project['duration']
               - unless project['market_sector'].blank?
                 %li.list-title Market Sector
-              %li= link_to project['market_sector'], "/our-services"
+              %li= link_to project['market_sector'], "/our-services#services"
               - unless project['core_market'].blank?
                 %li.list-title Core
               - project['core_market'].each do |core|

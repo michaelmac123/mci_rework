@@ -177,7 +177,9 @@
       width:      95%; }
     &:hover:after {
       height:     100%;
-      opacity:    1; } }
+      opacity:    1; }
+    &.no-link {
+      cursor:     default; } }
   &-image {
     border:       7px solid lighten($med-blue, 35); }
   &-img-responsive {
