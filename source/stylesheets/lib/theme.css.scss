@@ -7,26 +7,27 @@
   .navbar-nav {
       padding-top:    20px;
       & > li {
-      // border:{
-      //   right:        2px ridge lighten($med-blue, 25); }
-      &:last-of-type {
-        border:none; }
-      & > a {
-        @include font-smoothing();
-        @include border-radius(2px);
-        color:          darken($med-blue, 15);
-        font:{
-          size:         1.1em;
-          weight:       bold; }
-        margin:         0 5px;
-        padding:{
-          top:          10px;
-          bottom:       10px; }
-        text-shadow:    1px 1px 0 rgba($white, .25);
-        &:hover {
-          background-color: rgba(darken($med-blue, 5), .85);
-          color:            darken($white, 10);
-          text-shadow:      1px 1px 0 darken($med-blue, 20); } } } }
+        &:last-of-type {
+          border:none; }
+        & > a {
+          @include transition(all 500ms);
+          @include font-smoothing();
+          @include border-radius(2px);
+          color:          darken($med-blue, 15);
+          font:{
+            size:         1.1em;
+            weight:       bold; }
+          margin:         0 5px;
+          padding:{
+            top:          10px;
+            bottom:       10px; }
+          text-shadow:    1px 1px 0 rgba($white, .25);
+          &:hover {
+            @include transition(background-color 500ms);
+            @include box-shadow(0 0 4px rgba(darken($med-blue, 20), .25) inset);
+            background-color: rgba(darken($med-blue, 5), .65);
+            color:            darken($white, 10);
+            text-shadow:      -1px -1px 0 transparent; } } } }
 
   .navbar-nav > .active > a,
   .navbar-nav > .active > a:hover,
