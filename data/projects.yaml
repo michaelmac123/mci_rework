@@ -92,7 +92,7 @@
   additional_projects: "true" #pretend true false
   name: "Sayre Law PLLC."
   project_name: "Law Office Renovation"
-  headline: "45 Days and on budget"
+  headline: "Sayre Law PLLC."
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
     Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
@@ -127,7 +127,6 @@
   images:
     - 1
     - 2
-    - 3
 
 - project:
   id: 4

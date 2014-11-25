@@ -8,27 +8,25 @@
 
     .carousel-inner{role: "listbox"}
       .item.active
-        = link_to (image_tag 'project-images/MCI-senior-living-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/our-projects/four-freedoms'
+        = link_to (image_tag 'project-images/MCI-four-freedoms/MCI-four-freedoms-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/our-projects/four-freedoms'
         .carousel-caption
           .carousel-caption-content
             %h2.work-class Senior Living
-            %h3
-              %i "Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis."
+            %h3.text-left
+              %i "Four Freedoms House of Seattle"
       .item
         = link_to (image_tag 'project-images/MCI-tenant-improvements-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
         .carousel-caption
           .carousel-caption-content
             %h2.work-class Tenant Improvement
-            %h3
-              %i "Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis."
+            %h3 &nbsp;
 
       .item
         = link_to (image_tag 'project-images/MCI-catastrophic-loss-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
         .carousel-caption
           .carousel-caption-content
             %h2.work-class Catastrophic Loss
-            %h3
-              %i "Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis."
+            %h3 &nbsp;
 
     %a.left.carousel-control{ href: "#carousel-main-header", role: "button", data:{slide: "prev"}}
       %span.glyphicon.glyphicon-chevron-left
