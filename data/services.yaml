@@ -29,14 +29,14 @@
 - services:
   id: 4
   hide:
-  icon: ""
+  icon: "wrench"
   title: "Industrial Support Services"
   details:
 
 
 - services:
   id: 5
-  icon: "users"
+  icon: "truck"
   title: "Commerical"
   details:
     - "Onsite visits with owner and/or investors to understand the dream/vision"
@@ -46,6 +46,6 @@
 - services:
   id: 6
   hide:
-  icon: ""
+  icon: "university"
   title: "Historical Renovation"
   details:

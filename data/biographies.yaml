@@ -11,16 +11,19 @@
   name: "Debbie Mitchell"
   title: "Vice President, MCI Inc."
   description:
-    "<p>Debbie Mitchell, MCIs Vice President, joined the organization in 1994. Debbie brings to MCI her years of experience in real estate, banking and customer service to manage the company’s operational processes. Her resiliency shows as she has successfully helped Ron build the business from sole proprietorship to its current makeup
-    of a talented team. Her ability to multi-task and manage operational complexities have been founded time and time again.</p>"
+    "<p>Debbie Mitchell, MCIs Vice President, joined the organization in 1994. Debbie brings to MCI her years of experience in real estate,
+    banking and customer service to manage the company’s operational processes. Her resiliency shows as she has successfully helped
+    Ron build the business from sole proprietorship to its current makeup of a talented team. Her ability to multi-task and manage operational
+    complexities have been founded time and time again.</p>"
 
 - biography:
   id: 3
   name: "Merrill Jannison"
   title: "Vice President, Sales & Marketing"
   description:
-    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+    "<p>Merrill has 25 years of experience in sales & marketing through a variety of sales channels, including traditional and electronic retail distribution.   Merrill has provided a wide range
+    of companies with expert advice on business planning, product development, channel distribution, sales concept implementation, strategic positioning, and go to market strategy.</p>
+    <p>Merrill brings our clients exceptional consulting acumen in brand development, strategic placement in traditional retail, e-Commerce and Direct Response markets.</p>"
 
 - biography:
   id: 4
@@ -32,11 +35,13 @@
 
 - biography:
   id: 5
-  name: "Tim"
+  name: "Tim Hopkins"
   title: "Project Foreman"
   description:
-    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+    "<p>Tim has over 30 years’ experience in the construction industry. As a superintendent his responsibility is planning and ensuring the coordination of the project. He ensures that the quality
+     of work and materials are up to the specifications and that the budget is followed. He is responsible with the total supervision and safety of all the operations of the job site. He monitors
+     the workers and the progress of the project and reports to his employer. Working with the architect and project manager together create solutions to problems that may arise.</p>
+     <p>My first objective is to listen to the client and make them part of the process.</p>"
 
 - biography:
   id: 6
@@ -61,5 +66,7 @@
   name: "Matthew Mosteller"
   title: "IT Manager"
   description:
-    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+    "<p>Matthew has over 20 years’ experience with business iT systems solution development and implementation, including servers, networking, security, virtualization, cloud computing,
+    remote connectivity, websites and productivity applications.  He develops and manages the MCI iT infrastructure, from implementing zero downtime strategies to rolling out new remote
+    office locations.  Coming from his own 15 year career as a general contractor, Matthew understands the critical nature of performance and reliability in the construction industry.</p>
+    <p>It is Matthew's personal goal that no MCI client will ever hear us say, 'Sorry, our computers are down'.</p>"
