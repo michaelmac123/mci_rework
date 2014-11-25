@@ -43,16 +43,18 @@
   name: "Bill Boyer"
   title: "Sales & Estimating"
   description:
-    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+    "<p>At Mitchell, Bill has a dual roll of Estimator/Sales.  He brings 30 years of experience in the construction field in varied positions.
+    A Washington Native, he graduated from Western Washington University with a degree in Business Administration.
+    His work experience centers around the Seattle area. In addition to his construction experience he also earned Real Estate Sales and Mortgage Loan Originator’s licenses.</p>
+    <p>Bill has designed, estimated, sold and constructed many buildings in the Northwestern USA.  He takes pride and enjoyment seeing a project from inception to completion.</p>"
 
 - biography:
   id: 7
   name: "Susan Darr"
   title: "Office Manager"
   description:
-    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+    "<p>Susan is often the first contact at Mitchell Contractors and is involved in a wide variety of duties. These include, but are not limited to; reception, filing, processing of invoices, balancing accounts, payroll, sub-contracts and client interactions.
+    She has experience in office management, bookkeeping, banking, and education.  She has been with the company since early 2012.</p>"
 
 - biography:
   id: 8
