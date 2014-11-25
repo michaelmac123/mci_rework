@@ -3,6 +3,7 @@
   featured: "true" #pretend true false
   additional_projects: "false" #pretend true false
   name: "Four Freedoms"
+  project_name: "Four Freedoms House of Seattle"
   headline: "Brief sector info that sounds very influential"
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
@@ -25,16 +26,20 @@
     elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
     lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
     Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
-  client: "Four Freedom"
-  architect:  "Mr. Architect"
-  location: "Vashon, WA"
-  duration: "3 months"
+  client: "Prudential Property Management"
+  architect:  "Magellan Architects"
+  engineer: "Quantum Consulting Engineers"
+  location: "Seattle, WA"
+  duration: "14 months"
+  market_sector: "Senior Living"
   core_market:
-    - "Senior Living"
-    - "Design Build"
-    - "Collaborative Virtual Building and BIM"
-    - "Sustainable Construction"
-    - "Preconstruction"
+    - "Sesmic Structural Retrofit"
+    - "Barrier Free Living Accomodations"
+    - "Administrative Office TI"
+    - "Bitter Lake Bistro TI"
+    - "Dinning and Lobby TI"
+    - "Exterior & Interior Public Area Safety Accomodations"
+    - "Exterior & Interior Public Area Security Accomodations"
   images:
     - 1
     - 2
@@ -44,7 +49,8 @@
   id: 2
   featured: "false" #pretend true false
   additional_projects: "true" #pretend true false
-  name: "K2"
+  name: "Car Quest"
+  project_name: "Car Quest"
   headline: "Brief sector info that sounds very influential"
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
@@ -67,16 +73,16 @@
     elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
     lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
     Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
-  client: "K2"
-  architect:  "Mr. Architect"
-  location: "Vashon, WA"
-  duration: "3 months"
+  client: "Advanced Auto Parts"
+  architect:  "Urbanadd"
+  engineer: "Answers, Inc."
+  location: "Kent, WA"
+  duration: "40 days"
+  market_sector: "Retail Tenant Improvements"
   core_market:
-    - "Senior Living"
-    - "Design Build"
-    - "Collaborative Virtual Building and BIM"
-    - "Sustainable Construction"
-    - "Preconstruction"
+    - "Regional Warehouse TI"
+    - "Showroom TI"
+
   images:
     - 1
     - 2
@@ -86,8 +92,9 @@
   id: 3
   featured: "false" #pretend true false
   additional_projects: "true" #pretend true false
-  name: "Test Project 3"
-  headline:
+  name: "Sayre Law PLLC."
+  project_name: "Law Office Renovation"
+  headline: "45 Days and on budget"
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
     Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
@@ -109,16 +116,16 @@
     elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
     lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
     Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
-  client: "Test Project 3"
-  architect:  "Mr. Architect"
-  location: "Vashon, WA"
-  duration: "3 months"
+  client: "Sayre Law PLLC."
+  architect:  "MCI Bidder Design"
+  location: "Seattle, WA"
+  engineer:
+  duration: "45 Days"
+  market_sector: "Office Tenant Improvements"
   core_market:
-    - "Senior Living"
-    - "Design Build"
-    - "Collaborative Virtual Building and BIM"
-    - "Sustainable Construction"
-    - "Preconstruction"
+    - "3100 sf Interior Renovation"
+    - "Bidder Design Budget & Time Sensitive"
+    - "Exceeded Client Expectations"
   images:
     - 1
     - 2
@@ -128,7 +135,8 @@
   id: 4
   featured: "false" #pretend true false
   additional_projects: "false" #pretend true false
-  name: "Test Project 4"
+  name: "Vashon Dental Clinic"
+  project_name: "Dental Clinic Renovation"
   headline: "Brief sector info that sounds very influential"
   testimonial:
     "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
@@ -151,16 +159,15 @@
     elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
     lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
     Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
-  client: "Test Project 4"
-  architect:  "Mr. Architect"
+  client: "Vashon Dental Clinc"
+  architect:  "MCI Bidder Design"
+  engineer:
   location: "Vashon, WA"
-  duration: "3 months"
+  duration: "30 Days"
+  market_sector: "Medical/Dental Tenant Improvements"
   core_market:
-    - "Senior Living"
-    - "Design Build"
-    - "Collaborative Virtual Building and BIM"
-    - "Sustainable Construction"
-    - "Preconstruction"
+    - "Interior Renovation"
+    - "Add SF with Additional Operatories"
   images:
     - 1
     - 2

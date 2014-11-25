@@ -10,32 +10,32 @@ body_class: index
 .container.call-out-section
   .row
     .col-md-2.col-xs-4.text-center
-      .call-out-circle.hidden-xs= image_tag 'bio-avatars/MCI-bio-avatar-1.png', alt: "Mitchell Contracting", class: 'ran-img call-out-avantar hide'
+      .call-out-circle.hidden-xs= image_tag 'bio-avatars/MCI-bio-avatar-1.png', alt: "Mitchell Contracting", class: 'call-out-avantar'
     .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
-      %h3.call-out-content
-        Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes.
-
+      %h3.call-out-content.theme-red
+        %i.fa.fa-quote-left
+        %i Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes.
+        %i.fa.fa-quote-right
 .content-section-a
   .container
     .row
-      .col-md-5.col-sm-6
-        %h2.section-heading.margin-bottomgap0.med-blue
-          Phasellus sagittis, nulla in
+      .col-md-6.col-sm-6
+        %h2.section-heading.margin-bottomgap0.med-blue Proudly serving the Puget Sound Area
         %hr.section-heading-spacer
         .clearfix
-        %p.section-body-text
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi. Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat, sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam. Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris.
-      .col-md-7.col-sm-6.pull-right
+        %p.section-body-text><
+          Mitchell Construction was founded by President, Ron Mitchell over 30 years ago. Mitchell’s clients are the number one priority-we attribute all success to their on-going business with us.  Our company culture is entirely about building and nurturing relationships, customer satisfaction is at the cornerstone of our success.
+        %p.section-body-text><
+          We have a strong team with a dynamic style and ability to cut through the chaos of demanding projects, while meeting and exceeding customer expectations. We pride ourselves in having a strong work ethic, winning attitude coupled with an acute attention to detail.
+      .col-md-6.col-sm-6.pull-right
         = image_tag 'project-images/MCI-senior-living-2.png', class: "content-section-image img-responsive", alt: "Mitchell Construction"
         %p.text-center.work-class Project Specific Caption
 
 .content-section-b
   .container
     .row
-      .col-md-8.col-sm-push-3.col-sm-8
-        %h2.section-heading.margin-bottomgap0.med-blue
-          We've served the Pudget Sound Area for over 25 years.
-          %i Our first client is still one of our client.
+      .col-md-8.col-sm-8
+        %h2.section-heading.margin-bottomgap0.med-blue Our first client is still one of our client.
         %hr.section-heading-spacer
         .clearfix
     = partial "layouts/client_logos"

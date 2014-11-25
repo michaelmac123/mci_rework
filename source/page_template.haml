@@ -4,13 +4,4 @@ body_class: projects
 ---
 = partial "layouts/navigation"
 
-= partial "layouts/header_carousel"
-
-.container.call-out-section
-  .row
-    .col-md-2.col-xs-4.text-center
-      .call-out-circle.hidden-xs= image_tag 'bio-avatars/MCI-bio-avatar-1.png', alt: "Mitchell Contracting", class: 'ran-img call-out-avantar hide'
-    .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
-      %h3.call-out-content= locals[:page_slogan]
-
 = render_page_partial(locals[:id])

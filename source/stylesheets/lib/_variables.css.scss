@@ -15,7 +15,7 @@ $theme-red: #901E19;
 $red-orange:#B73E18;
 
 // Color pairs for standard colors.
-$colors: "charcoal" $charcoal, "white" $white, "light-blue" $light-blue, "med-blue" $med-blue, "dark-blue" $dark-blue, "bone" $bone, "khaki" $khaki, "tan" $tan;
+$colors: "red-orange" $red-orange, "theme-red" $theme-red , "charcoal" $charcoal, "white" $white, "light-blue" $light-blue, "med-blue" $med-blue, "dark-blue" $dark-blue, "bone" $bone, "khaki" $khaki, "tan" $tan;
 @each $color in $colors {
   $key:   nth(unquote($color), 1);
   $value: nth($color, 2);

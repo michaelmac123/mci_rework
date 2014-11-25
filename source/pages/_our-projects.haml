@@ -1,5 +1,37 @@
 - data.projects.each do |project|
   - if project['featured'] == "true"
+    / Header
+    #carousel-project-header.carousel.slide{ data:{ride:"carousel" } }
+      %ol.carousel-indicators
+        %li.active{ data:{target:"#carousel-project-header", slide:{to:"0"}}}
+        %li{ data:{target:"#carousel-project-header", slide:{to:"1"}}}
+        %li{ data:{target:"#carousel-project-header", slide:{to:"2"}}}
+
+      .carousel-container
+        .carousel{ data:{ride:"carousel" } }
+          .carousel-inner{role: "listbox"}
+            - project['images'].each_with_index do |image, i|
+              .item{class: i < 1 ? "active" : "" }
+                = image_tag "project-images/MCI-#{project['name'].parameterize}-#{image}.jpg", alt: "Mitchell Contracting | #{project['name']}", class: 'img-responsive'
+                .carousel-caption
+                  .carousel-caption-content
+                    %h2.work-class= project['market_sector']
+                    %h3
+                      -unless project['headline'].blank?
+                        %i= project['headline']
+      %a.left.carousel-control{ href: "#carousel-project-header", role: "button", data:{slide: "prev"}}
+        %span.glyphicon.glyphicon-chevron-left
+        %span.sr-only Previous
+
+      %a.right.carousel-control{ href:"#carousel-project-header", role:"button", data:{slide:"next"}}
+        %span.glyphicon.glyphicon-chevron-right
+        %span.sr-only Next
+
+
+    .container.call-out-section
+      .row
+        .col-md-12.col-xs-12
+          %h3.call-out-content= locals[:page_slogan]
     .content-section-a
       .container
         .row
@@ -12,15 +44,29 @@
             %hr.section-heading-spacer/
             .clearfix
             %ul.list-unstyled.project-outline-list
-              %li.list-title Client
+              - unless project['project_name'].blank?
+                %li.list-title Project
+              %li= project['project_name']
+              - unless project['client'].blank?
+                %li.list-title Client
               %li= project['client']
-              %li.list-title Architect
+              - unless project['architect'].blank?
+                %li.list-title Architect
               %li= project['architect']
-              %li.list-title Location
+              - unless project['engineer'].blank?
+                %li.list-title Engineer
+              %li= project['engineer']
+              - unless project['location'].blank?
+                %li.list-title Location
               %li= project['location']
-              %li.list-title Duration
+              - unless project['duration'].blank?
+                %li.list-title Duration
               %li= project['duration']
-              %li.list-title Core Market
+              - unless project['market_sector'].blank?
+                %li.list-title Market Sector
+              %li= link_to project['market_sector'], "/our-services"
+              - unless project['core_market'].blank?
+                %li.list-title Core
               - project['core_market'].each do |core|
                 %li= core
 
