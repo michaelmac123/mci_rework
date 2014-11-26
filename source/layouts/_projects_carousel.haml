@@ -1,20 +1,23 @@
 -# Projects Carousel
 .carousel-container
   #carousel-projects-header.carousel.slide{ data:{ride:"carousel" } }
-    .carousel-caption
-      .carousel-caption-content
-        %h2.work-class= project['headline']
-        %h3
-          %i= project['market_sector']
+    .carousel-caption.hidden-xs
+      .row.carousel-caption-content
+        .col-md-4.carousel-caption-logo
+          = inline_svg('mci-logo', class: "carousel-brand-svg project-svg mci-logo-svg")
+        .col-md-8.carousel-caption-sub
+          %h2><
+            = project['headline']
+            %small= project['market_sector']
 
     .carousel-inner{role: "listbox"}
-      - project['images'].each_with_index do |image, i|
+      - image_path = image_paths_in("images/project-images/MCI-#{project['name'].parameterize}/")
+      - image_count = image_path.length
+      - image_path.each_with_index do |image_resource, i|
         .item{class: i < 1 ? "active" : "" }
-          = link_to (image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-#{image}.jpg", alt: "Mitchell Contracting | #{project['name']}", class: 'img-responsive'), "our-projects/#{project['name'].parameterize}"
-
-
+          = link_to (image_tag image_resource, alt: "Mitchell Contractor | #{project['name']}", class: 'img-responsive'), "our-projects/#{project['name'].parameterize}"
       %ol.carousel-indicators
-        - project['images'].each_with_index do |image, i|
+        - fixed_array(image_count).each_with_index do |ct, i|
           %li{ class: i < 1 ? "active" : "", data:{target:"#carousel-projects-header", slide:{to:"#{i}"}}}
 
     %a.left.carousel-control{ href: "#carousel-projects-header", role: "button", data:{slide: "prev"}}

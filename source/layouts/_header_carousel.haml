@@ -1,40 +1,24 @@
 / Header
 .carousel-container
   #carousel-main-header.carousel.slide{ data:{ride:"carousel" } }
-    %ol.carousel-indicators
-      %li.active{ data:{target:"#carousel-main-header", slide:{to:"0"}}}
-      %li{ data:{target:"#carousel-main-header", slide:{to:"1"}}}
-      %li{ data:{target:"#carousel-main-header", slide:{to:"2"}}}
-      %li{ data:{target:"#carousel-main-header", slide:{to:"3"}}}
-
+    .carousel-caption.hidden-xs
+      .row.carousel-caption-content
+        .col-md-4.carousel-caption-logo
+          = inline_svg('mci-logo', class: "img-responsive carousel-brand-svg mci-logo-svg")
+        .col-md-8.carousel-caption-sub
+          %h2><
+            %small><
+              - data_count = data.services.length - 1
+              - data.services.each_with_index do |serv, i|
+                - unless data_count == i
+                  #{serv['title']},&nbsp;
+                - else
+                  #{serv['title']}
     .carousel-inner{role: "listbox"}
-      .item.active
-        = link_to (image_tag 'project-images/MCI-four-freedoms/MCI-four-freedoms-2.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/our-projects/four-freedoms'
-        .carousel-caption
-          .carousel-caption-content
-            %h2.work-class Senior Living
-            %h3.text-left
-              %i "Four Freedoms House of Seattle"
-      .item
-        = link_to (image_tag 'project-images/MCI-tenant-improvements-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
-        .carousel-caption
-          .carousel-caption-content
-            %h2.work-class Tenant Improvement
-            %h3 "K2, Sayre Law PLLC., Car Quest..."
+      - image_paths_in("images/project-images/MCI-misc/").each do |image_resource|
+        .item
+          = link_to (image_tag image_resource, alt: "Mitchell Contractors", class: 'img-responsive'), '/our-projects/four-freedoms'
 
-      .item
-        = link_to (image_tag 'project-images/MCI-catastrophic-loss-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
-        .carousel-caption
-          .carousel-caption-content
-            %h2.work-class Catastrophic Loss & Demolition
-            %h3 Best Buy
-
-      .item
-        = link_to (image_tag 'project-images/MCI-claim-jumpers/MCI-claim-jumpers-1.jpg', alt: "Mitchell Contracting", class: 'img-responsive'), '/'
-        .carousel-caption
-          .carousel-caption-content
-            %h2.work-class Commercial Site Improvement
-            %h3 Claim Jumpers
 
     %a.left.carousel-control{ href: "#carousel-main-header", role: "button", data:{slide: "prev"}}
       %span.glyphicon.glyphicon-chevron-left
@@ -43,3 +27,5 @@
     %a.right.carousel-control{ href:"#carousel-main-header", role:"button", data:{slide:"next"}}
       %span.glyphicon.glyphicon-chevron-right
       %span.sr-only Next
+:javascript
+  $('.item').eq(Math.floor((Math.random() * $('.item').length))).addClass("active");

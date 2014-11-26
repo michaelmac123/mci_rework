@@ -40,7 +40,11 @@ page "/press-releases/*", :layout => false
 ###
 helpers do
   def nav_active(page)
-    current_page.url == "#{page}" ? {:class => "active"} : {}
+    if current_page.url.match(/^[\/]$/) == "/" || current_page.url == "/home"
+      {:class => "active"}
+    else
+      current_page.url == "#{page}" ? {:class => "active"} : {}
+    end
   end
 
   def render_page_partial(s, ps=nil)
@@ -66,6 +70,31 @@ helpers do
     klass << " #{path}"
     svg = file.read
     svg = content_tag :span, svg, class: klass, title: opts[:title] || ""
+  end
+
+  def files_in(dir, options = {})
+    if options[:extensions]
+      extensions = [options[:extensions]].flatten.compact.uniq
+      options[:glob_pattern] = "**/*.{#{extensions.join(',')}}"
+    end
+
+    options[:glob_pattern] ||= "**/*"
+
+    full_dir = File.join(source_dir, dir)
+    file_pattern = File.join(full_dir, options[:glob_pattern])
+    Dir.glob(file_pattern)
+  end
+
+  def image_paths_in(dir)
+    image_paths = files_in(dir, extensions: %w{ jpg gif jpeg png })
+
+    image_paths.map do |path|
+      path.split(source_dir).last
+    end
+  end
+
+  def fixed_array(size)
+     Array.new(size)
   end
 
 end

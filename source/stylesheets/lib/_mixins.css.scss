@@ -20,6 +20,24 @@
   -o-transition:      $properties;  /* Opera 10.5+ */
   transition:         $properties; }
 
+@mixin box-shadow($full: 0 0 0 $gray, $sledgehammer:false){
+  @if sledge-hammer {
+    -webkit-box-shadow:   $full !important;
+    -moz-box-shadow:      $full !important;
+    -o-box-shadow:        $full !important;
+    box-shadow:           $full !important;
+    zoom: 1; // FOR IE9
+  }
+  @else {
+    -webkit-box-shadow:   $full;
+    -moz-box-shadow:      $full;
+    -o-box-shadow:        $full;
+    box-shadow:           $full;
+    zoom: 1; // FOR IE9
+  }
+}
+
+
 @mixin gapmaker($sizes: (5 10 15 25), $sides: (top bottom), $type: "margin", $class: "" ) {
   @if $type == nil {
     @each $sz in $sizes {

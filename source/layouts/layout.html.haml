@@ -31,6 +31,8 @@
     %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png")
     %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png")
 
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
+
     -# Stylesheets
     = stylesheet_link_tag 'application'
 
@@ -43,7 +45,6 @@
 
     -# Javascripts
     = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
     = javascript_include_tag '//cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js'
     = javascript_include_tag 'application'
     / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries

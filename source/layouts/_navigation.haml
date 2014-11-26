@@ -8,10 +8,9 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "/"}
-        / = image_tag 'mci-logo.svg', alt: "Mitchell Contracting Inc.", class: "img-responsive navbar-brand-img"
+      %a.navbar-brand.visible-xs{:href => "/"}
         = inline_svg('mci-logo', class: "img-responsive navbar-brand-svg mci-logo-svg")
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
+      %ul.nav.navbar-nav
         = partial "layouts/navlinks"

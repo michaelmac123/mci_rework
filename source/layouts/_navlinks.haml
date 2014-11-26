@@ -1,6 +1,9 @@
 - data.pages.each do |page|
   - if page['id'].to_s == '1'
     -# Find home page
+    %li.hidden-xs
+      %a.navbar-list-icon{:href => "/"}
+        = inline_svg('mci-logo', class: "navbar-brand-svg mci-logo-svg")
     %li{nav_active("/")}= link_to "#{page['name'].upcase}", "/"
   - else
     -# Link to other pages

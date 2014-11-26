@@ -13,7 +13,7 @@ body_class: projects
     .container.call-out-section
       .row
         .col-md-2.col-xs-4.text-center
-          .call-out-circle.hidden-xs= image_tag "client-logos/logo-#{project['name'].parameterize}.png", alt: "Mitchell Contracting | #{project['name']}", class: 'call-out-client-logo'
+          .call-out-circle.hidden-xs= image_tag "client-logos/logo-#{project['name'].parameterize}.png", alt: "Mitchell Contractor | #{project['name']}", class: 'call-out-client-logo'
         .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
           %h3.call-out-content "#{project['testimonial']}"
     .content-section-a.padding-bottomgap0
@@ -67,9 +67,11 @@ body_class: projects
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left= project['solution']
             %hr.section-body-spacer.padding-bottomgap10
-            - project['images'].each_with_index do |image, i|
+            - image_path = image_paths_in("images/project-images/MCI-#{project['name'].parameterize}/")
+            - image_count = image_path.length
+            - image_path.each_with_index do |image_resource, i|
               - if i > 2
-                .col-md-4.margin-bottomgap20= link_to (image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-#{i}.jpg", class: "img-responsive project-image "), "#", data:{ toggle: "modal", target: "#projectModal_#{i}" }
+                .col-md-4.margin-bottomgap20= link_to (image_tag image_resource, class: "img-responsive project-image "), "#", data:{ toggle: "modal", target: "#projectModal_#{i}" }
 
                 .modal.project-modal.fade{id: "projectModal_#{i}", tabindex: "-1", role: "dialog", aria:{ hidden:"true", labelledby: "projectModal_#{i}"} }
                   .modal-dialog
@@ -78,6 +80,6 @@ body_class: projects
                         %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
                           %i.fa.fa-remove
                       .modal-body
-                        = image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-#{i}.jpg", class: "img-responsive"
+                        = image_tag image_resource, class: "img-responsive"
 
 = partial "layouts/bottom_banner"

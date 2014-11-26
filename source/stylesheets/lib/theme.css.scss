@@ -2,13 +2,18 @@
 
 //Navbar
 .navbar-default {
-  background-color: rgba(lighten($med-blue, 10), .95);
+  background-color: lighten($med-blue, 20);
   border-color:     darken($med-blue, 2);
   .navbar-nav {
-      padding-top:    20px;
+      float:none;
+      padding:{
+        bottom:     12px; }
+      text-align:   center;
       & > li {
+        float:none;
+        display:inline-block;
         &:last-of-type {
-          border:none; }
+          border:   none; }
         & > a {
           @include transition(all 500ms);
           @include font-smoothing();
@@ -27,7 +32,12 @@
             @include box-shadow(0 0 4px rgba(darken($med-blue, 20), .25) inset);
             background-color: rgba(darken($med-blue, 5), .65);
             color:            darken($white, 10);
-            text-shadow:      -1px -1px 0 transparent; } } } }
+            text-shadow:      -1px -1px 0 transparent; }
+          &.navbar-list-icon {
+            @include box-shadow(0 0 0 transparent, $sledgehammer: true);
+            background-color:transparent !important;
+            height:         38px;
+            width:          135px; } } } }
 
   .navbar-nav > .active > a,
   .navbar-nav > .active > a:hover,
@@ -42,25 +52,29 @@
     font:{
       size:         1.7em;
       weight:       normal; }
-    height:         85px;
-    padding:        5px 15px;
+    height:         63px;
+    margin-left:    0 !important;
+    padding:        8px 15px;
+    width:          75px;
     &:hover {
       color:        lighten($bone, 15); }
     &-img {
       height:       75px; }
     &-svg {
-      width:        220px;
+      position:     absolute;
+      svg {
+        width:        135px; }
       .mci-logo-mitchell{
-        fill:       $logo-red; }
+        display:    none; }
       .mci-logo-construction{
-        fill:       $white; }
+        display:    none; }
       .mci-logo-icon{
-        fill:       $white; } }
-     }
+        fill:       $white; } } }
   .navbar-toggle {
     background-color: rgba($bone, .5);
-    margin-top:     7.5%;
-    padding:        10px; } }
+    margin:         3%;
+    padding:        12px 10px; }
+}
 
 
 .carousel {
@@ -69,65 +83,94 @@
     padding-top:        3%;
     text-align:         center; }
   &-caption {
-    bottom:           10%;
-    left:             44%;
-    right:            10%;
+    bottom:           12%;
+    left:             18%;
+    right:            18%;
     width:            auto; }
   &-indicators {
     bottom:           50px; }
   &-caption-content {
       $primary:       $med-blue;
-      @include border-radius(1px);
+      @include border-radius(2px);
       @include box-shadow(0 0 1px 1px rgba(darken($primary, 25), .55));
       background:{
-        color:        rgba($primary, .75);}
-      border-bottom:  3px solid lighten($primary, 30);
+        color:        rgba($black, .80);}
+      border-bottom:  3px solid rgba($white, .9);
       z-index:        2;
       h2 {
+        border-left:  1px solid $white;
         color:        lighten($white, 5);
-        font-size:    2.25em;
-        margin:       0;
-        padding:      10px 20px 0px 20px;
+        font:{
+            family:   $work-class;
+            size:     2.25em;
+            weight:   lighter;}
+        line-height:  130%;
+        margin:       2.5% 0 0 0;
+        padding:      10px 10px 10px 25px;
         text:{
           align:      left;
-          shadow:     1px 2px 0px rgba($charcoal,0.5); } }
+          shadow:     1px 2px 0px rgba($black,0.85); } }
       h3 {
-        @extend h2;
-        font-size:    1.5em;
-        padding:      5px 0 10px 40px;
-        text:{
-          align:      left;} } }
+          @extend h2; }
+      small {
+          color:      $white;
+          display:    block;
+          line-height:120%;
+          padding-left:10px; } }
   &-inner {
     img {
       max-height:     705px;
       width:          100%; } }
   &-control {
-    z-index:          10; } }
+    z-index:          10; }
+  &-brand {
+    &-svg {
+      svg {
+        width:        250px; }
+      .mci-logo-mitchell{
+        fill:       $logo-red; }
+      .mci-logo-construction{
+        fill:       $white; }
+      .mci-logo-icon{
+        fill:       $white; } } }
+  &-caption-logo {
+    padding:        15px 0 10px 10px; } }
 
 .call-out {
   &-section {}
   &-content {
     color:            $theme-red;
-    margin:           20px 0; }
+    margin:           20px 0 10px 0; }
   &-circle {
-    @include border-radius(50%);
+    @include border-radius(3%);
     background:       $white;
     display:          inline-block;
-    height:           135px;
-    margin:           -15% 0;
+    height:           115px;
+    margin:           -10% 0;
     position:         relative;
     text-align:       center;
-    width:            135px;
+    width:            185px;
     z-index:          20; }
   &-avantar {
     @include border-radius(50%);
     height:           100%; }
   &-client-logo {
-    height:           100px;
-    left:             -25%;
     position:         relative;
-    top:              10%;
-    width:            200px; } }
+    top:              12%;
+    width:            185px; }
+  &-brand-svg {
+    left:             11%;
+    position:         absolute;
+    top:              30%;
+    width:            80%;
+    svg {
+      width:          100%;
+      .mci-logo-mitchell{
+        fill:       $logo-red; }
+      .mci-logo-construction{
+        fill:       $logo-red; }
+      .mci-logo-icon{
+        fill:       $logo-red; } } } }
 
 .content-section {
   &-a {
@@ -417,7 +460,15 @@ footer {
 
 .footer-links ul {
   li > a {
-    color:          lighten(#777777, 10); }
+    color:          lighten(#777777, 10);
+    display:        inline-block;
+    width:          auto;
+    .navbar-brand-svg.mci-logo-svg {
+      display:      block;
+      fill:         lighten(#777777, 10);
+      position:     relative;
+      top:          15px;
+      width:        100px; } }
 
   li:after {
     content:        " | ";
@@ -468,12 +519,15 @@ footer {
     margin:{
       top:            0;
       bottom:         0; }
-    padding-top:      0;
+    padding:{
+      bottom:         0;
+      top:            0; }
     & > li {
       border:{
         right:        none;
         bottom:       1px solid #e7e7e7;
         left:         none; }
+      display:        block;
       &:last-of-type {
         border:       none; }
       & > a {
@@ -482,6 +536,17 @@ footer {
         padding:{
           top:        10px;
           bottom:     10px; } } } }
+  .navbar-default .navbar-brand-svg {
+    .mci-logo-mitchell{
+      display:    block;
+      fill:       $logo-red;}
+    .mci-logo-construction{
+      display:    block;
+      fill:       $white; }
+    .mci-logo-icon{
+      fill:       $white; } }
+  .navbar-default .navbar-header {
+    left:         0; }
   .service-inner {
     font-size:        .8em;
     top:              20%; }
@@ -491,8 +556,10 @@ footer {
     top: -20%; }
   .service-content {
     opacity:1; }
+  .carousel-inner {
+    max-height:230px; }
   .carousel.slide {
-    padding-top:      24%; }
+    padding-top:      12%; }
   .carousel-indicators {
     bottom:           0; }
   .carousel-caption {

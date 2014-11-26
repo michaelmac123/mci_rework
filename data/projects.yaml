@@ -35,16 +35,6 @@
     - "Dinning and Lobby TI"
     - "Exterior & Interior Public Area Safety Accomodations"
     - "Exterior & Interior Public Area Security Accomodations"
-  images:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
 
 - project:
   id: 2
@@ -84,17 +74,6 @@
     - "Regional Warehouse TI"
     - "Showroom TI"
 
-  images:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
-
 - project:
   id: 3
   featured: "false" #pretend true false
@@ -133,9 +112,6 @@
     - "3100 sf Interior Renovation"
     - "Bidder Design Budget & Time Sensitive"
     - "Exceeded Client Expectations"
-  images:
-    - 1
-    - 2
 
 - project:
   id: 4
@@ -174,5 +150,4 @@
   core_market:
     - "Interior Renovation"
     - "Add SF with Additional Operatories"
-  images:
-    - 1
+
