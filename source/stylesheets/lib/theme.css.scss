@@ -94,7 +94,7 @@
       @include border-radius(2px);
       @include box-shadow(0 0 1px 1px rgba(darken($primary, 25), .55));
       background:{
-        color:        rgba($black, .80);}
+        color:        rgba($black, .85);}
       border-bottom:  3px solid rgba($white, .9);
       z-index:        2;
       h2 {
@@ -106,7 +106,7 @@
             weight:   lighter;}
         line-height:  130%;
         margin:       2.5% 0 0 0;
-        padding:      10px 10px 10px 25px;
+        padding:      10px 10px 10px 3%;
         text:{
           align:      left;
           shadow:     1px 2px 0px rgba($black,0.85); } }
