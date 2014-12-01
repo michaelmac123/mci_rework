@@ -1,0 +1,29 @@
+---
+title: Mitchell Contracting | Welcome
+body_class: index
+---
+= partial "layouts/navigation"
+
+
+/ Page Content
+.container.call-out-section
+  .row
+    .col-md-2.col-xs-4.text-center
+    .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
+      %h3.call-out-content.theme-red &nbsp;
+.content-section-a
+  .container
+    .row
+      .col-md-6.col-sm-6
+        %h2.section-heading.margin-bottomgap0.med-blue Thank you for your submission.
+        %hr.section-heading-spacer
+        .clearfix
+        %p.section-body-text><
+          We will contact with you very soon.
+          %br
+          In the meantime, checkout some of our #{link_to "recent projects", '/our-projects'}.
+      .col-md-6.col-sm-6.pull-right
+        = image_tag 'project-images/MCI-misc/MCI-misc-1.jpg', class: "content-section-image img-responsive", alt: "Mitchell Contractors"
+        %p.content-section-caption.text-center.work-class Seismic Wall Construction
+
+= partial "layouts/bottom_banner"

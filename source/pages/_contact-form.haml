@@ -11,10 +11,39 @@
 .content-section-a
   .container
     .row.contact-form
-      .col-md-4.col-xs-12
+      .col-md-5.col-xs-12
         %h3.section-heading.margin-bottomgap0.med-blue
           Contact Us
         %hr.section-heading-spacer/
+
+        .clearfix
+        %form{ id: "contactForm", role: "form" }
+          .form-group
+            %label{ for: "fullname", class: 'form-label'} Name
+            %input{ type: 'text', class: "form-control", id: 'fullname', name: 'fullname', placeholder: "Enter Name"}
+          .form-group
+            %label{ for: "email", class: 'form-label' } Email
+            %input{ type: 'email', class: "form-control", id: 'email', name: 'email', placeholder: "Enter Email"}
+          .form-group
+            %label{ for: "phone", class: 'form-label' } Phone
+            %input{ type: 'text', class: "form-control", id: 'phone', name: 'phone', placeholder: "Enter Phone Number"}
+          .form-group
+            %label{ for: "description", class: 'form-label' } Description
+            %textarea{ rows: "3", class: "form-control", id: 'description', name: 'description', placeholder: "Brief Description"}
+          .form-group
+            .checkbox
+              %label
+                %input{ type: "checkbox", id: "contact_approval", value: "contact_approval", name: "contact_approval" } Do you want us to contact you?
+
+          .form-group
+            .col-sm-offset-2.col-sm-10
+              %button.btn.btn-primary.contact-form-button{ type: "submit" }
+                %i.fa.fa-paper-plane
+                Contact Us
+      .col-md-4.col-xs-12
+        %h3.section-heading.margin-bottomgap0.med-blue
+          &nbsp;
+
         %ul.list-unstyled.contact-form-list.clear-left
           %li.list-title Address:
           %li
@@ -23,28 +52,29 @@
             PO Box 167
             %br/
             Vashon, WA 98070
-          %li.list-title
-            Email:
-          %li information@mitchellcontractors.com
-      .col-md-5.col-xs-12
-        %h3.section-heading.margin-bottomgap0.med-blue
-          &nbsp;
-        / %hr.section-heading-spacer/
-        .clearfix
-        %form{role: "form"}
-          .form-group
-            %label{ for: "mciInputFirstName", class: 'form-label'} First Name
-            %input{ type: 'text', class: "form-control", id: 'mciInputFirstName', placeholder: "Enter First Name"}
-          .form-group
-            %label{ for: "mciInputLastName", class: 'form-label' } Last Name
-            %input{ type: 'text', class: "form-control", id: 'mciInputLastName', placeholder: "Enter Last Name"}
-          .form-group
-            %label{ for: "mciInputEmail", class: 'form-label' } Email
-            %input{ type: 'email', class: "form-control", id: 'mciInputEmail', placeholder: "Enter Email"}
-          .form-group
-            %label{ for: "mciInputFirstName", class: 'form-label' } Description
-            %textarea{ rows: "3", class: "form-control", id: 'mciInputDescription', placeholder: "Brief Description"}
-          .form-group
-            %button.btn.btn-primary.contact-form-button{ href: "#", type: "submit" }
-              %i.fa.fa-paper-plane
-              Contact Us
+
+        = image_tag 'project-images/MCI-misc/MCI-misc-2.jpg', class: "content-section-image img-responsive", alt: "Mitchell Contractors"
+        %p.content-section-caption.text-center.work-class Site Improvements
+:javascript
+  $("#contactForm").validate({
+    rules: {
+      fullname: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      phone: "required",
+      contact_approval: "required"
+    },
+
+    submitHandler: function(form) {
+      $.ajax({
+        dataType: 'jsonp',
+        url: "http://getsimpleform.com/messages/ajax?form_api_token=ed3bbd0d29527010e1df6a9811989c32",
+            data: $("#contactForm").serialize()
+          }).done(function() {
+
+        window.location.href = "/thank-you";
+      });
+    }
+  });

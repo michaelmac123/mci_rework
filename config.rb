@@ -35,6 +35,8 @@ end
 
 page "/press-releases/*", :layout => false
 
+page "/thank-you.html"
+
 ###
 # Helpers
 ###
