@@ -3,18 +3,22 @@
   name: "Ron Mitchell"
   title: "President/CEO, MCI Inc."
   description:
-    "<p>Ron is the founder and President/CEO of Mitchell Contractors, Inc. Having grown up in an entrepreneurial family, Ron takes after his father and grandfather and has built Mitchell Contractors to be a client-centric organization. He has learned from his life experiences that good relationships are the most important asset to any business.</p>
-    <p>Ron started Mitchell Contractors, Inc. over 30 years ago and has now cultivated a great team to build the company into what it is today. He prides himself on creating a team to deliver top-notch results, while maintaining the flexibility to work within dynamic situations and the ability to respond quickly to client needs.</p>
+    "<p>Ron is the founder and CEO of Mitchell Contractors, Inc. Having grown up in an entrepreneurial family,
+    Ron takes after his father and grandfather and has built Mitchell Contractors to be a client-centric organization.
+    He has learned from his life experiences that good relationships are the most important asset to any business.</p>
+    <p>Ron started Mitchell Contractors, Inc. over 30 years ago and has now cultivated a great team environment.
+    He prides himself in creating and empowering a team to deliver top-notch results, while maintaining the flexibility
+    to work within dynamic situations and respond quickly to client needs.</p>
     <p>Ron has successfully built the company “on integrity” and offers a first class experience to his clients as well as to his co-workers.</p>"
 - biography:
   id: 2
   name: "Debbie Mitchell"
   title: "Vice President, MCI Inc."
   description:
-    "<p>Debbie Mitchell, MCIs Vice President, joined the organization in 1994. Debbie brings to MCI her years of experience in real estate,
-    banking and customer service to manage the company’s operational processes. Her resiliency shows as she has successfully helped
-    Ron build the business from sole proprietorship to its current makeup of a talented team. Her ability to multi-task and manage operational
-    complexities have been founded time and time again.</p>"
+    "<p>Debbie Mitchell, MCIs Vice President, joined the organization in 1994. Debbie brings to MCI her years of experience
+    in real estate, banking and customer service to manage the company’s operational processes. Her resiliency shows as she
+    has successfully helped Ron build the business from sole proprietorship to its current makeup of a talented team. Her
+    ability to multi-task and manage operational complexities have been founded time and time again.</p>"
 
 - biography:
   id: 3
