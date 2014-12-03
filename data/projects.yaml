@@ -6,8 +6,6 @@
   project_name: "Four Freedoms House of Seattle"
   headline: "Four Freedoms House of Seattle"
   testimonial:
-    "...the client was pleased that this size of a
-     project was completed on time, on budget and the results exceeded expectations."
   story:
     "Mitchell Contractors completed the plus 1 year project at the Four Freedoms House of Seattle and
     Henry M. Jackson Apartments owned and ran by Prudent Properties.  It is located on Bitter Lake in North Seattle."
@@ -41,29 +39,19 @@
   featured: "false" #pretend true false
   additional_projects: "true" #pretend true false
   name: "Car Quest"
-  project_name: "Car Quest"
+  project_name: "Carquest / Advanced Auto Parts"
   headline: "Car Quest Showroom Build Out"
   testimonial:
-    "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
   story:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat,
-    sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam.
-    Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in
-    hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris."
+    "Car Quest Auto Arts as originally a Pacific Northwest business expanded is now a subsidiary of Advance Auto Parts.
+    A Client based relationship with MCI allowed pricing and then followed by TI renovations for their new 13000 SF showroom
+    and distribution center in Kent, Washington."
   objective:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim."
+    "Using customer supplied design documents perform renovations to a core and shell to facilitate ADA bathrooms,
+    employee break area, 1500 SF of showroom and install rack, shelving and sprinkler systems within a 13000 SF
+    distribution warehouse."
   solution:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
+    "Project completed on time and on budget for the clients pre-scheduled store opening."
   client: "Advanced Auto Parts"
   architect:  "Urbanadd"
   engineer: "Answers, Inc."
@@ -79,29 +67,22 @@
   featured: "false" #pretend true false
   additional_projects: "true" #pretend true false
   name: "Sayre Law PLLC."
-  project_name: "Law Office Renovation"
+  project_name: "Sayre Law Office Renovation"
   headline: "Sayre Law PLLC."
   testimonial:
-    "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
   story:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat,
-    sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam.
-    Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in
-    hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris."
+    "Sayre law offices sold their existing building to a developer intending to build another structure
+    in capital hill area of Seattle, Washington in 2005 with a rent-back agreement for a fixed period.
+    With the desire to stay in a similar location, serving 2 generations of client history they finally
+    found purchased an older 3000 SF Stand-alone building, built in the 1960's in need of renovation to
+    suit their needs."
   objective:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim."
+    "Now with new found urgency having limited time to relocate, the mission was to renovate the new
+    building with upgrades suitable for a law firm on a fixed budget.  The objective was to compete
+    the project in time to relocate without complications or conflict in leaving their exiting location."
   solution:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
+    "Project successfully completed in 4 weeks even with unseen conditions and complications we value
+    engineered a solution that allowed the completion to be on time and on budget."
   client: "Sayre Law PLLC."
   architect:  "MCI Bidder Design"
   location: "Seattle, WA"
@@ -121,27 +102,19 @@
   project_name: "Dental Clinic Renovation"
   headline: "Brief sector info that sounds very influential"
   testimonial:
-    "Testimonial: Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra. Class aptent taciti sociosqu."
   story:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat,
-    sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam.
-    Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in
-    hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris."
+    "Vashon Dental Clinic owned and operated by William Rosendahl DDS was in need of a complete renovation.
+    This renovation was performed as another Bidder Design Project by MCI and consisted of all new cabinetry,
+    State of the art equipment, controls and finishes for the office. During this process additional Square
+    footage was added to the clinic and a long needed additional 4th operatory. Do to business and patient
+    needs the timeline for these renovations required that the office be shut down completely and must be minimized."
   objective:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim."
+    "Have all planning and choices confirmed with deliveries of specialty items committed and under contract.
+    Complete the project, consisting of new plumbing, gas and specialty equipment with computerized interfaces
+    woven seamlessly into the new custom cabinet operatory service systems. The Doctor decided that he would
+    vacation throughout the duration with a mandatory reopening in 4 weeks or less."
   solution:
-    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas
-    elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in,
-    lobortis quis, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi.
-    Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque."
-  client: "Vashon Dental Clinc"
+    "Project successfully completed in 24 calendar days and ahead of schedule and on budget."
   architect:  "MCI Bidder Design"
   engineer:
   location: "Vashon, WA"
