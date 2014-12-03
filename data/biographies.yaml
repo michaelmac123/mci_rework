@@ -34,8 +34,10 @@
   name: "Jim Whitney"
   title: "Project Manager"
   description:
-    "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>"
+    "<p>Jim has been with MCI for more than 18 years. Throughout this time his extraordinary multi-tasking skills have directly contributed to the success and satisfaction of our clients.
+    Now, as the companies' Senior Project Manager, Jim is directly involved with all aspects of the project from budget and insight during the estimating process to scheduling and execution
+    with the production teams and vendors.</p><p>Jim also serves as MCI's Company Safety Administrator being uniquely qualified as a current Medic-One Paramedic and qualified Life Safety Trainer
+    who teaches regularly.</p>"
 
 - biography:
   id: 5
