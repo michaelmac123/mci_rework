@@ -87,6 +87,16 @@ helpers do
     Dir.glob(file_pattern)
   end
 
+  def image_check(img)
+    if File.file?("#{root}/source/images/client-logos/logo-#{img.parameterize}.png")
+      content_tag :div, class: "call-out-circle hidden-xs" do
+        image_tag "client-logos/logo-#{img.parameterize}.png", alt: "Mitchell Contractor | #{img}", class: 'call-out-client-logo'
+      end
+    else
+      content_tag :span
+    end
+  end
+
   def image_paths_in(dir)
     image_paths = files_in(dir, extensions: %w{ jpg gif jpeg png })
 
