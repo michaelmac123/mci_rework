@@ -13,7 +13,9 @@ body_class: projects
     .container.call-out-section
       .row
         .col-md-2.col-xs-4.text-center
-          .call-out-circle.hidden-xs= image_tag "client-logos/logo-#{project['name'].parameterize}.png", alt: "Mitchell Contractor | #{project['name']}", class: 'call-out-client-logo'
+          - if File.file?("#{root}/source/images/client-logos/logo-#{project['name'].parameterize}.png")
+            .call-out-circle.hidden-xs
+              = image_tag "client-logos/logo-#{project['name'].parameterize}.png", alt: "Mitchell Contractor | #{project['name']}", class: 'call-out-client-logo'
         .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
           %h3.call-out-content.text-center
             - unless locals[:page_slogan].blank?
