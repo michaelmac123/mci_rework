@@ -19,7 +19,7 @@
      went above and beyond to pass all inspections with flying colors and the client was pleased that this size of a
      project was completed on time, on budget and the results exceeded expectations. Tenants were transitioned very
      well by Mitchell and all were thrilled to show off their new home."
-  client: "Prudential Property Management"
+  client: "Prudential Property Management, Inc. Miami, Florida"
   architect:  "Magellan Architects"
   engineer: "Quantum Consulting Engineers"
   location: "Seattle, WA"
@@ -101,7 +101,7 @@
   additional_projects: "true" #pretend true false
   name: "Vashon Dental Clinic"
   project_name: "Dental Clinic Renovation"
-  headline: "Brief sector info that sounds very influential"
+  headline: "Vashon Dental Clinic"
   testimonial:
   story:
     "Vashon Dental Clinic owned and operated by William Rosendahl DDS was in need of a complete renovation.
@@ -126,3 +126,29 @@
     - "Interior Renovation"
     - "Add SF with Additional Operatories"
 
+- project:
+  id: 5
+  featured: "false" #pretend true false
+  additional_projects: "true" #pretend true false
+  name: "Zumiez"
+  project_name: "Retail In Mall Renovation"
+  headline: "Zumiez"
+  testimonial:
+  story:
+    "Mitchell Contractors, Inc. has completed several Zumiez retail clothing store in mall locations from Colorado to Washington."
+  objective:
+    "Demolition of existing retail tenant space and reestablish new retail tenant improvements of 6000–8000 square feet.
+    Tenant Improvements schedule for completion within 6 weeks prior to scheduled Grand Opening events."
+  solution:
+    "These projects where facilitated and completed on sites throughout the western states with relationships that had been
+    developed through Mitchell Contractors, Inc. and local sub-contractors. Mitchell Contractors, Inc. worked with Zumiez's
+    owner's representative and owner's vendors to assure successful completion of these challenging, time sensitive openings."
+  architect:  "Murphy Varey Architects"
+  engineer:
+  location: "Multiple Locations"
+  duration: "6-8 weeks"
+  market_sector: "Retail Tenant Improvement"
+  core_market:
+    - "6000SF Tenant Improvement"
+    - "Time Sensitive Sequence"
+    - "Mall Storefront and Retail"

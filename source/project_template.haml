@@ -59,10 +59,13 @@ body_class: projects
                 %li= core
 
           .col-md-8.col-sm-6
+            - image_path = image_paths_in("images/project-images/MCI-#{project['name'].parameterize}/")
+            - image_count = image_path.length
             %h3.section-heading.margin-bottomgap0.med-blue Project Story
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left
-              = image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-2.jpg", class: "img-responsive project-image col-md-5 pull-right"
+              - unless image_path.length < 2
+                = image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-2.jpg", class: "img-responsive project-image col-md-5 pull-right"
               = project['story']
             %h3.section-heading.margin-bottomgap0.med-blue Project Objective
             %hr.section-heading-spacer/
@@ -71,8 +74,6 @@ body_class: projects
             %hr.section-heading-spacer/
             %p.section-body-text.clear-left= project['solution']
             %hr.section-body-spacer.padding-bottomgap10
-            - image_path = image_paths_in("images/project-images/MCI-#{project['name'].parameterize}/")
-            - image_count = image_path.length
             - image_path.each_with_index do |image_resource, i|
               - if i > 2
                 .col-md-4.margin-bottomgap20= link_to (image_tag image_resource, class: "img-responsive project-image "), "#", data:{ toggle: "modal", target: "#projectModal_#{i}" }
