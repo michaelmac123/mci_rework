@@ -12,7 +12,7 @@ require "rack/contrib/try_static"
 #   [username, password] == ['kod-tester', 'test-kod']
 # end
 
-require File.expand_path("../rack_try_static", __FILE__)
+# require File.expand_path("../rack_try_static", __FILE__)
 
 # Enable proper HEAD responses
 # use Rack::Head
