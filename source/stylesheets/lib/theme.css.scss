@@ -538,7 +538,10 @@ footer {
     border-color:transparent;
   }
 }
-
+@media(min-width:1600px) {
+  .carousel-container {
+    margin: 0 auto;
+    width:  80%; } }
 
 @media(max-width:1199px) {
   ul.banner-social-buttons {
