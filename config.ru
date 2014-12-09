@@ -20,10 +20,10 @@ use Rack::ResponseHeaders do |headers|
   headers['Content-Type'] = 'text/html; charset=utf-8' if headers['Content-Type'] == 'text/html'
 end
 
-use Rack::Deflater
+# use Rack::Deflater
 
 # Cache assets
-use Rack::StaticCache, urls: ["/images", "/stylesheets", "/javascripts", "/fonts"], root: "build"
+# use Rack::StaticCache, urls: ["/images", "/stylesheets", "/javascripts", "/fonts"], root: "build"
 
 # Attempt to serve static HTML files
 use Rack::TryStatic,
