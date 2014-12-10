@@ -25,7 +25,7 @@ end
 # Cache assets
 use Rack::StaticCache,
   urls: [
-    "/images",
+    # "/images",
     "/stylesheets",
     "/javascripts",
     "/fonts"],
