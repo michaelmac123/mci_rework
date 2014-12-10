@@ -23,7 +23,13 @@ end
 # use Rack::Deflater
 
 # Cache assets
-# use Rack::StaticCache, urls: ["/images", "/stylesheets", "/javascripts", "/fonts"], root: "build"
+use Rack::StaticCache,
+  urls: [
+    "/images",
+    "/stylesheets",
+    "/javascripts",
+    "/fonts"],
+  root: "build"
 
 # Attempt to serve static HTML files
 use Rack::TryStatic,
