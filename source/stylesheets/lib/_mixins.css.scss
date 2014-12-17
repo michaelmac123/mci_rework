@@ -1,3 +1,12 @@
+// For clearing floats properly
+@mixin clearfix{
+  *zoom: 1;
+  &:before, &:after{
+    content: "";
+    display: table; }
+  &:after{
+    clear:both; } }
+
 @mixin float($float:left, $pos:relative) {
   float:    $float;
   position: $pos;}
@@ -13,7 +22,7 @@
   -o-transform:       $properties;
   transform:          $properties; }
 
-@mixin transitions($properties){
+@mixin transition($properties){
   -webkit-transition: $properties;  /* Saf3.2+, Chrome */
   -moz-transition:    $properties;  /* FF4+ */
   -ms-transition:     $properties;  /* IE10 */

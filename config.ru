@@ -2,7 +2,9 @@ require "rubygems"
 
 require "rack"
 require "middleman/rack"
+require 'rack/contrib/static_cache'
 require "rack/contrib/try_static"
+require "middleman-smusher"
 
 # Build the static site when the app boots
   # "bundle exec middleman build"
@@ -25,7 +27,7 @@ end
 # Cache assets
 use Rack::StaticCache,
   urls: [
-    # "/images",
+    "/images",
     "/stylesheets",
     "/javascripts",
     "/fonts"],

@@ -22,3 +22,14 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Application Stats
 gem 'newrelic_rpm'
+
+# Smash PNGS
+gem 'middleman-smusher'
+
+# Minify files
+gem 'middleman-minify-html'
+gem 'uglifier'
+
+# Faster JS minification
+gem 'therubyracer'
+gem 'oj'

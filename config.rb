@@ -1,6 +1,6 @@
 activate :directory_indexes
 
-# set :relative_links, true
+set :relative_links, true
 
 ###
 # Page options, layouts, aliases and proxies
@@ -125,6 +125,8 @@ set :fonts_dir, 'fonts'
 
 set :haml, { :ugly => true, :format => :html5 }
 
+# Uniquely named assets
+activate :asset_hash
 
 # Build-specific configuration
 configure :build do
@@ -135,21 +137,25 @@ configure :build do
   ignore 'javascripts/vendor/*'
 
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript, compressor: Uglifier.new(mangle:{toplevel: true}, compress:{unsafe: true}), inline: true
+
+  # Minify HTML
+  # activate :minify_html
 
   # Enable cache buster
-  activate :cache_buster
+  # activate :cache_buster
 
   # Use relative URLs
   activate :relative_assets
 
   # Compress PNGs after build
-  # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
+  activate :smusher
+
+  # Gzip text files
+  activate :gzip
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
