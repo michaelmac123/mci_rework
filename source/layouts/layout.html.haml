@@ -42,11 +42,11 @@
     = partial "layouts/footer"
 
     -# Javascripts
-    %script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
-    %script(src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js")
+    %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    %script(src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js")
 
-    %script(src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
-    %script(src="http://cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js")
+    %script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+    %script(src="https://cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js")
     = javascript_include_tag 'application'
 
     / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -63,6 +63,7 @@
       $('.carousel').carousel({
         interval: 3000
       })
+      $('.item').eq(Math.floor((Math.random() * $('.item').length))).addClass("active");
 
     - if build?
       -# Google Analytics
