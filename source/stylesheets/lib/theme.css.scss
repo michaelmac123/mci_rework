@@ -538,7 +538,7 @@ footer {
     border-color:transparent;
   }
 }
-@media(min-width:1600px) {
+@media(min-width:1500px) {
   .carousel-container {
     margin: 0 auto;
     width:  80%; } }
@@ -594,7 +594,8 @@ footer {
   .service-content {
     opacity:1; }
   .carousel-inner {
-    max-height:230px; }
+    max-height:185px;
+    min-height:185px; }
   .carousel.slide {
     padding-top:      16%; }
   .carousel-indicators {
