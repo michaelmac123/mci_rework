@@ -314,3 +314,16 @@
 [12/17/14 10:51:52 -0800 Michaels-MacBook-Pro-2.local (63693)] INFO : Doing deferred dependency-detection before Rack startup
 [12/17/14 10:51:52 -0800 Michaels-MacBook-Pro-2.local (63693)] INFO : Installing HTTPClient instrumentation
 [12/17/14 10:54:00 -0800 Michaels-MacBook-Pro-2.local (63693)] INFO : Starting Agent shutdown
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Starting the New Relic agent in "development" environment.
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Reading configuration from newrelic.yml (/Volumes/Storage/src/mci)
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Environment: development
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : No known dispatcher detected.
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Application: My Application (Development)
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Installing Net instrumentation
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Installing deferred Rack instrumentation
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Installing Rack::Builder middleware instrumentation
+[12/17/14 11:04:49 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Finished instrumentation
+[12/17/14 11:04:51 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Doing deferred dependency-detection before Rack startup
+[12/17/14 11:04:52 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Reporting to: https://rpm.newrelic.com/accounts/840239/applications/11972589
+[12/17/14 11:06:41 -0800 Michaels-MacBook-Pro-2.local (63797)] INFO : Starting Agent shutdown
