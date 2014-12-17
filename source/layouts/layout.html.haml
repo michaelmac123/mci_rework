@@ -31,9 +31,6 @@
     %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png")
     %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png")
 
-    %script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
-    %script(src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js")
-
     -# Stylesheets
     = stylesheet_link_tag 'application'
 
@@ -45,6 +42,9 @@
     = partial "layouts/footer"
 
     -# Javascripts
+    %script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    %script(src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js")
+
     %script(src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
     %script(src="http://cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js")
     = javascript_include_tag 'application'
