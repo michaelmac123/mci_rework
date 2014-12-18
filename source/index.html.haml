@@ -7,12 +7,10 @@ body_class: index
 = partial "layouts/header_carousel"
 
 / Page Content
-.container.call-out-section.visible-print-block
+.container.call-out-section
   .row
-    .col-md-2.col-xs-4.text-center
-      .call-out-circle.hidden-xs= inline_svg('mci-logo', class: "img-responsive call-out-brand-svg mci-logo-svg")
-    .col-md-10.col-xs-10.col-md-offset-0.col-xs-offset-1
-      %h3.call-out-content.theme-red
+    .col-md-10.col-md-offset-1.col-xs-12
+      %h3.call-out-content.text-center
         %i.fa.fa-quote-left
         %i Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes.
         %i.fa.fa-quote-right
