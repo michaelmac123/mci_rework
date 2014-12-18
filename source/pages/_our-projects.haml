@@ -71,7 +71,7 @@
         .row.project
           .col-md-4.col-sm-12
             %h3.margin-bottomgap0
-              = link_to "#{project['name']}","our-projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
+              = link_to "#{project['name']}","/our-projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
         .row.project-featured
           .col-md-4.col-xs-12= image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-1.jpg", class: "img-responsive"
           .col-md-8.col-xs-12
@@ -80,4 +80,4 @@
             %h4.clear-left= project['headline'].blank? ?  "&nbsp;" : project['headline']
             %p.section-body-text.clear-left><
               = truncate(project['story'], length: 600)
-              = link_to "Learn More","our-projects/#{project['name'].parameterize}", class: "margin-leftgap10"
+              = link_to "Learn More","/our-projects/#{project['name'].parameterize}", class: "margin-leftgap10"

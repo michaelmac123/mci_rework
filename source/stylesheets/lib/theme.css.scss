@@ -435,6 +435,7 @@ label.error {
 
 .banner {
   color:            $bone;
+  // Add the .. so that the build knows where to look for the images.
   background:       url("../images/banner-bg.jpg") no-repeat center center;
   background-size:  cover;
   padding:          100px 0;
@@ -549,7 +550,10 @@ footer {
     margin-top:   15px; }
   .service-inner {
     font-size:        .8em;
-    font: -20%; } }
+    font: -20%; }
+  .carousel-caption-sub h2 {
+    border-left:none;
+    display:block; } }
 
 @media(max-width:767px) {
   .navbar-default .navbar-nav {
