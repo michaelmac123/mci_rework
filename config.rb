@@ -160,3 +160,18 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+password = ENV["PASSWORD"]
+
+# run PASSWORD=gr8passwd middleman deploy
+activate :deploy do |deploy|
+
+  deploy.build_before = true # default: false
+
+  deploy.method   = :ftp
+  deploy.host     = 'ftp://waws-prod-bay-017.ftp.azurewebsites.windows.net'
+  deploy.path     = '/site/wwwroot'
+  deploy.user     = 'mitchellcontractorsinc\$mitchellcontractorsinc'
+  deploy.password = password
+end
+

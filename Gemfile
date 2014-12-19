@@ -33,3 +33,6 @@ gem 'uglifier'
 # Faster JS minification
 gem 'therubyracer'
 gem 'oj'
+
+#Deploy via command line
+gem 'middleman-deploy', '~> 1.0'
