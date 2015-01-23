@@ -17,7 +17,7 @@
         %hr.section-heading-spacer/
 
         .clearfix
-        %form{ id: "contactForm", role: "form" }
+        %form#contactForm{role: "form" }
           .form-group
             %label{ for: "fullname", class: 'form-label'} Name
             %input{ type: 'text', class: "form-control", id: 'fullname', name: 'fullname', placeholder: "Enter Name"}
@@ -52,28 +52,30 @@
             PO Box 167
             %br/
             Vashon, WA 98070
+          %li.list-title Phone:
+          %li 206-463-5838
+          %li.list-title
+            %a{href: "mailto:info@mitchellcontractors.com"} Click Here to Email Us
 
         = image_tag 'project-images/MCI-misc/MCI-misc-2.jpg', class: "content-section-image img-responsive", alt: "Mitchell Contractors"
         %p.content-section-caption.text-center.work-class Site Improvements
 :javascript
-  $("#contactForm").validate({
+  $('#contactForm').validate({
     rules: {
       fullname: "required",
       email: {
         required: true,
         email: true
-      },
-      phone: "required",
-      contact_approval: "required"
+      }
     },
-
     submitHandler: function(form) {
       $.ajax({
         dataType: 'jsonp',
         url: "http://getsimpleform.com/messages/ajax?form_api_token=60a58aa9d0bb98d2db58a404bb2640fe",
-            data: $("#contactForm").serialize()
-          }).done(function() {
-
+        data: $("#contactForm").serialize()
+      }).done(function() {
+        //callback which can be used to show a thank you message
+        //and reset the form
         window.location.href = "/thank-you";
       });
     }

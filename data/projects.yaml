@@ -39,7 +39,7 @@
   featured: "false" #pretend true false
   additional_projects: "true" #pretend true false
   name: "Car Quest"
-  project_name: "Carquest / Advanced Auto Parts"
+  project_name: "Carquest / Advance Auto Parts"
   headline: "Car Quest Showroom Build Out"
   testimonial:
   story:
@@ -52,7 +52,7 @@
     systems within a 13000 square foot distribution warehouse."
   solution:
     "Project completed on time and on budget for the clients pre-scheduled store opening."
-  client: "Advanced Auto Parts"
+  client: "Advance Auto Parts"
   architect:  "Urbanadd"
   engineer: "Answers, Inc."
   location: "Kent, WA"

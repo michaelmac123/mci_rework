@@ -140,7 +140,7 @@ configure :build do
   activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript, compressor: Uglifier.new(mangle:{toplevel: true}, compress:{unsafe: true}), inline: true
+  # activate :minify_javascript, compressor: Uglifier.new(mangle:{toplevel: true}, compress:{unsafe: true}), inline: true
 
   # Minify HTML
   # activate :minify_html
@@ -161,17 +161,17 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-password = ENV["PASSWORD"]
+# password = ENV["PASSWORD"]
 
 # run PASSWORD=gr8passwd middleman deploy
-activate :deploy do |deploy|
+# activate :deploy do |deploy|
 
-  deploy.build_before = true # default: false
+#   deploy.build_before = true # default: false
 
-  deploy.method   = :ftp
-  deploy.host     = 'ftp://waws-prod-bay-017.ftp.azurewebsites.windows.net'
-  deploy.path     = '/site/wwwroot'
-  deploy.user     = 'mitchellcontractorsinc\$mitchellcontractorsinc'
-  deploy.password = password
-end
+#   deploy.method   = :ftp
+#   deploy.host     = 'ftp://waws-prod-bay-017.ftp.azurewebsites.windows.net'
+#   deploy.path     = '/site/wwwroot'
+#   deploy.user     = 'mitchellcontractorsinc\$mitchellcontractorsinc'
+#   deploy.password = password
+# end
 
