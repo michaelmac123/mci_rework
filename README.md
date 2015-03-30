@@ -1,3 +1,8 @@
-# Prototype File
+# MCI ReWork. 
+Using middleman, design & develope mutlipage site.
 
-MCI ReWork.
+## Structure
+  - Yaml fed data
+  - Multple Templates
+  - SASS
+  - HAML
