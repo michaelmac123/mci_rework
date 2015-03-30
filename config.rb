@@ -49,20 +49,20 @@ helpers do
     end
   end
 
-  def render_page_partial(s, ps=nil)
+  def render_page_partial(s, ps=nil, nm=nil)
     case s.to_s
     when '2'
-      partial "pages/our-company", :locals => {:id => s, :page_slogan => ps }
+      partial "pages/our-company", :locals => {:id => s, :page_slogan => ps, :name => nm }
     when '3'
-      partial "pages/our-projects", :locals => {:id => s, :page_slogan => ps }
+      partial "pages/our-projects", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     when '4'
-      partial "pages/our-services", :locals => {:id => s, :page_slogan => ps }
+      partial "pages/our-services", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     when '5'
-      partial "pages/our-news", :locals => {:id => s, :page_slogan => ps }
+      partial "pages/our-news", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     when '6'
-      partial "pages/contact-form", :locals => {:id => s, :page_slogan => ps }
+      partial "pages/contact-form", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     else
-      partial "pages/our-company", :locals => {:id => s, :page_slogan => ps }
+      partial "pages/our-company", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     end
   end
 
@@ -90,7 +90,7 @@ helpers do
   def image_check(img)
     if File.file?("#{root}/source/images/client-logos/logo-#{img.parameterize}.png")
       content_tag :div, class: "call-out-circle hidden-xs" do
-        image_tag "client-logos/logo-#{img.parameterize}.png", alt: "Mitchell Contractor | #{img}", class: 'call-out-client-logo'
+        image_tag "client-logos/logo-#{img.parameterize}.png", alt: "Mitchell Contractors | #{img}", class: 'call-out-client-logo'
       end
     else
       content_tag :span

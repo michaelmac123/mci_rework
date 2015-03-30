@@ -11,7 +11,7 @@
 .content-section-a
   .container
     .row.contact-form
-      .col-md-5.col-xs-12
+      .col-md-4.col-xs-12
         %h3.section-heading.margin-bottomgap0.med-blue
           Contact Us
         %hr.section-heading-spacer/
@@ -40,24 +40,34 @@
               %button.btn.btn-primary.contact-form-button{ type: "submit" }
                 %i.fa.fa-paper-plane
                 Contact Us
-      .col-md-4.col-xs-12
+      .col-md-3.col-xs-6
         %h3.section-heading.margin-bottomgap0.med-blue
           &nbsp;
 
-        %ul.list-unstyled.contact-form-list.clear-left
-          %li.list-title Address:
+        %ul.list-unstyled.contact-form-list.clear-left.margin-topgap40
+          %li.list-title Mailing Address:
           %li
             Mitchell Contractors Inc
             %br/
             PO Box 167
             %br/
             Vashon, WA 98070
+          %li.list-title Physical Address:
+          %li
+            Mitchell Contractors Inc
+            %br/
+            19505 Vashon Hwy. S.W.
+            %br/
+            Vashon, WA 98070
           %li.list-title Phone:
           %li 206-463-5838
           %li.list-title
             %a{href: "mailto:info@mitchellcontractors.com"} Click Here to Email Us
+      .col-md-5.col-xs-6
+        %h3.section-heading.margin-bottomgap0.med-blue
+          &nbsp;
 
-        = image_tag 'project-images/MCI-misc/MCI-misc-2.jpg', class: "content-section-image img-responsive", alt: "Mitchell Contractors"
+        = image_tag 'project-images/MCI-misc/MCI-misc-02.jpg', class: "content-section-image img-responsive margin-topgap40", alt: "Mitchell Contractors"
         %p.content-section-caption.text-center.work-class Site Improvements
 :javascript
   $('#contactForm').validate({

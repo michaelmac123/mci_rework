@@ -32,7 +32,7 @@
 - biography:
   id: 4
   name: "Jim Whitney"
-  title: "Senior Project Manager"
+  title: "Sr. Project Manager"
   description:
     "<p>Jim brings 25 years of commercial, industrial and residential experience to the construction process. Jim has knowledge and experience working in all phases of construction from underground
     earthwork to vertical turn-key construction which gives him the ability to manage projects in a controlled manner. He has experience in all phases of construction including marketing,
@@ -42,7 +42,7 @@
 - biography:
   id: 5
   name: "Tim Hopkins"
-  title: "General Superintendent"
+  title: "Sr. General Superintendent"
   description:
     "<p>Tim is a seasoned veteran in the construction industry with over 30 years' experience. His multifaceted experience makes him one of the most effective and efficient supervisors
     in the industry. Having history in residential, multifamily, commercial and industrial project types he interfaces the needs of the project team with the actual project needs. A superintendent's
@@ -53,13 +53,12 @@
 
 - biography:
   id: 6
-  name: "Bill Boyer"
-  title: "Sales & Estimating"
+  name: "Sandra Vasquez"
+  title: "Sr. Project Manager"
   description:
-    "<p>At Mitchell, Bill has a dual roll of Estimator/Sales.  He brings 30 years of experience in the construction field in varied positions.
-    A Washington Native, he graduated from Western Washington University with a degree in Business Administration.
-    His work experience centers around the Seattle area. In addition to his construction experience he also earned Real Estate Sales and Mortgage Loan Originator's licenses.</p>
-    <p>Bill has designed, estimated, sold and constructed many buildings in the Northwestern USA.  He takes pride and enjoyment seeing a project from inception to completion.</p>"
+    "<p>Sandra comes to Mitchell Contractors as a retired Navy Reservist 'Seebee' with an extensive and varied background in construction. While in the Navy she obtained the Navy Certification title of Planner/Estimator.
+    Her most recent experience has been with the Army Corp of Engineers in Seattle. She held the position of Financial Analyst managing a variety of construction projects in Commercial, Residential, and Paving & Runways.</p>
+    <p>Sandra holds a Bachelor’s degree in Business with a Major in Accounting from Concordia University, Delaware.</p>"
 
 - biography:
   id: 7
