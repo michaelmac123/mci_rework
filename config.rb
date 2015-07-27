@@ -28,7 +28,7 @@ end
 
 # Projects Page route
 data.projects.each do |project|
-  proxy "our-projects/#{(project.name).parameterize}.html", "/project_template.html",
+  proxy "projects/#{(project.name).parameterize}.html", "/project_template.html",
   :locals => {  :name => project.name, :id => project.id, :project_slogan => project.page_slogan },
   :ignore => true
 end
@@ -52,17 +52,19 @@ helpers do
   def render_page_partial(s, ps=nil, nm=nil)
     case s.to_s
     when '2'
-      partial "pages/our-company", :locals => {:id => s, :page_slogan => ps, :name => nm }
+      partial "pages/company", :locals => {:id => s, :page_slogan => ps, :name => nm }
     when '3'
-      partial "pages/our-projects", :locals => {:id => s, :page_slogan => ps, :name => nm  }
+      partial "pages/projects", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     when '4'
-      partial "pages/our-services", :locals => {:id => s, :page_slogan => ps, :name => nm  }
+      partial "pages/services", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     when '5'
-      partial "pages/our-news", :locals => {:id => s, :page_slogan => ps, :name => nm  }
+      partial "pages/construction-management", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     when '6'
+      partial "pages/news", :locals => {:id => s, :page_slogan => ps, :name => nm  }
+    when '7'
       partial "pages/contact-form", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     else
-      partial "pages/our-company", :locals => {:id => s, :page_slogan => ps, :name => nm  }
+      partial "pages/company", :locals => {:id => s, :page_slogan => ps, :name => nm  }
     end
   end
 

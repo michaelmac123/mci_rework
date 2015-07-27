@@ -14,7 +14,7 @@
           .col-md-12.col-sm-12
             %h2.section-heading.margin-gap0.med-blue
               Featured Project:
-              = link_to project['name'], "/our-projects/#{project['name'].parameterize}", class: "upper-class margin-leftgap10"
+              = link_to project['name'], "/projects/#{project['name'].parameterize}", class: "upper-class margin-leftgap10"
         .row.project
           .col-md-3.col-sm-6
             %h3.section-heading.margin-bottomgap0.med-blue
@@ -42,7 +42,7 @@
               %li= project['duration']
               - unless project['market_sector'].blank?
                 %li.list-title Market Sector
-              %li= link_to project['market_sector'], "/our-services#services"
+              %li= link_to project['market_sector'], "services#services"
               - unless project['core_market'].blank?
                 %li.list-title Core
               - project['core_market'].each do |core|
@@ -71,7 +71,7 @@
         .row.project
           .col-md-4.col-sm-12
             %h3.margin-bottomgap0
-              = link_to "#{project['name']}","/our-projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
+              = link_to "#{project['name']}","/projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
         .row.project-featured
           .col-md-4.col-xs-12= image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-01.jpg", class: "img-responsive"
           .col-md-8.col-xs-12
@@ -80,4 +80,4 @@
             %h4.clear-left= project['headline'].blank? ?  "&nbsp;" : project['headline']
             %p.section-body-text.clear-left><
               = truncate(project['story'], length: 600)
-              = link_to "Learn More","/our-projects/#{project['name'].parameterize}", class: "margin-leftgap10"
+              = link_to "Learn More","/projects/#{project['name'].parameterize}", class: "margin-leftgap10"

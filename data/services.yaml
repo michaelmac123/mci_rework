@@ -57,3 +57,29 @@
     - "Interface of design objectives with current code compliance"
     - "Design team coordination with governing authorities"
     - "Proficient in value engineering for time & cost savings"
+
+- services:
+  id: 7
+  hide: spacer
+  icon:
+  title:
+  details:
+
+- services:
+  id: 8
+  hide:
+  icon: "sitemap"
+  title: "Construction Management"
+  details:
+    - "Specialized analysis and engineering for structural modifications"
+    - "Understanding of allowable materials & practices"
+    - "Interface of design objectives with current code compliance"
+    - "Design team coordination with governing authorities"
+    - "Proficient in value engineering for time & cost savings"
+
+- services:
+  id: 9
+  hide: spacer
+  icon:
+  title:
+  details:

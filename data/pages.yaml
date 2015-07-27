@@ -5,25 +5,30 @@
 
 - page:
   id: 2
-  name: Our Company
+  name: Company
   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
 
 - page:
   id: 3
-  name: Our Projects
+  name: Projects
   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
 
 - page:
   id: 4
-  name: Our Services
+  name: Services
   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
 
 - page:
   id: 5
-  name: Our News
+  name: Construction Management
   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
 
 - page:
   id: 6
+  name: News
+  page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
+
+- page:
+  id: 7
   name: Contact
   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
