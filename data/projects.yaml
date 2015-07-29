@@ -154,3 +154,97 @@
     - "6000SF Tenant Improvement"
     - "Time Sensitive Sequence"
     - "Mall Storefront and Retail"
+
+- project:
+  id: 6
+  featured: "false" #pretend true false
+  in_progress_projects: "true" #pretend true false
+  upcoming_projects: "false" #pretend true false
+  additional_projects: "false" #pretend true false
+  name: "ABB"
+  project_name:
+  headline:
+  testimonial:
+  story:
+
+  objective:
+
+  solution:
+
+  architect:
+  engineer:
+  location:
+  duration:
+  market_sector:
+  core_market:
+
+- project:
+  id: 7
+  featured: "false" #pretend true false
+  in_progress_projects: "true" #pretend true false
+  upcoming_projects: "false" #pretend true false
+  additional_projects: "false" #pretend true false
+  name: "Round One Entertainment/AAP-Greenwood"
+  project_name:
+  headline:
+  testimonial:
+  story:
+
+  objective:
+
+  solution:
+
+  architect:
+  engineer:
+  location:
+  duration:
+  market_sector:
+  core_market:
+
+- project:
+  id: 8
+  featured: "false" #pretend true false
+  in_progress_projects: "false" #pretend true false
+  upcoming_projects: "true" #pretend true false
+  additional_projects: "false" #pretend true false
+  name: "AAP-Snohomish"
+  project_name:
+  headline:
+  testimonial:
+  story:
+
+  objective:
+
+  solution:
+
+  architect:
+  engineer:
+  location:
+  duration:
+  market_sector:
+  core_market:
+
+- project:
+  id: 9
+  featured: "false" #pretend true false
+  in_progress_projects: "false" #pretend true false
+  upcoming_projects: "true" #pretend true false
+  additional_projects: "false" #pretend true false
+  name: "ATI PT., Wright Runstad Construction Management"
+  project_name:
+  headline:
+  testimonial:
+  story:
+
+  objective:
+
+  solution:
+
+  architect:
+  engineer:
+  location:
+  duration:
+  market_sector:
+  core_market:
+
+

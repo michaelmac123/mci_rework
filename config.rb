@@ -99,6 +99,23 @@ helpers do
     end
   end
 
+  def image_check_for(dir)
+    if directory_exists?("#{root}/source/#{dir}")
+      image = files_in(dir, extensions: %w{ jpg gif jpeg png })
+      image.map do |path|
+        if image.length >= 1
+          img_source = path.split(source_dir).last
+        end
+      end
+    else
+      nil
+    end
+  end
+
+  def directory_exists?(directory)
+    File.directory?(directory)
+  end
+
   def image_paths_in(dir)
     image_paths = files_in(dir, extensions: %w{ jpg gif jpeg png })
 

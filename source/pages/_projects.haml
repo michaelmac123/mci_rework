@@ -65,6 +65,60 @@
   .container
     .row
       .col-md-12.col-sm-12
+        %h2.section-heading.margin-bottomgap0.med-blue In-Progress Projects
+    - data.projects.each do |project|
+      - if project['in_progress_projects'] == "true"
+        .row.project
+          .col-md-4.col-sm-12
+            %h3.margin-bottomgap0= link_to "#{project['name']}","/projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
+        .row.project-featured
+          .col-md-4.col-xs-12
+            - unless image_check_for("images/project-images/MCI-#{project['name'].parameterize}/").nil?
+              - image_check_for("images/project-images/MCI-#{project['name'].parameterize}/").take(1).each do |img|
+                = image_tag img, class: "img-responsive"
+            - else
+              .image-blank
+                %span Coming Soon
+          .col-md-8.col-xs-12
+            %h3.section-heading.margin-gap0.med-blue Project Story
+            %hr.section-heading-spacer/
+            %h4.clear-left= project['headline'].blank? ?  "&nbsp;" : project['headline']
+            %p.section-body-text.clear-left><
+              = truncate(project['story'], length: 600)
+
+              / = link_to "Learn More","/projects/#{project['name'].parameterize}", class: "margin-leftgap10"
+
+.content-section-a
+  .container
+    .row
+      .col-md-12.col-sm-12
+        %h2.section-heading.margin-bottomgap0.med-blue Upcoming Projects
+    - data.projects.each do |project|
+      - if project['upcoming_projects'] == "true"
+        .row.project
+          .col-md-4.col-sm-12
+            %h3.margin-bottomgap0
+              = link_to "#{project['name']}","/projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
+        .row.project-featured
+          .col-md-4.col-xs-12
+            - unless image_check_for("images/project-images/MCI-#{project['name'].parameterize}/").nil?
+              - image_check_for("images/project-images/MCI-#{project['name'].parameterize}/").take(1).each do |img|
+                = image_tag img, class: "img-responsive"
+            - else
+              .image-blank
+                %span Coming Soon
+          .col-md-8.col-xs-12
+            %h3.section-heading.margin-gap0.med-blue Project Story
+            %hr.section-heading-spacer/
+            %h4.clear-left= project['headline'].blank? ?  "&nbsp;" : project['headline']
+            %p.section-body-text.clear-left><
+              = truncate(project['story'], length: 600)
+              / = link_to "Learn More","/projects/#{project['name'].parameterize}", class: "margin-leftgap10"
+
+.content-section-b
+  .container
+    .row
+      .col-md-12.col-sm-12
         %h2.section-heading.margin-bottomgap0.med-blue Additional Projects
     - data.projects.each do |project|
       - if project['additional_projects'] == "true"
@@ -73,7 +127,13 @@
             %h3.margin-bottomgap0
               = link_to "#{project['name']}","/projects/#{project['name'].parameterize}", class: "project-section-heading med-blue"
         .row.project-featured
-          .col-md-4.col-xs-12= image_tag "project-images/MCI-#{project['name'].parameterize}/MCI-#{project['name'].parameterize}-01.jpg", class: "img-responsive"
+          .col-md-4.col-xs-12
+            - unless image_check_for("images/project-images/MCI-#{project['name'].parameterize}/").nil?
+              - image_check_for("images/project-images/MCI-#{project['name'].parameterize}/").take(1).each do |img|
+                = image_tag img, class: "img-responsive"
+            - else
+              .image-blank
+                %span Coming Soon
           .col-md-8.col-xs-12
             %h3.section-heading.margin-gap0.med-blue Project Story
             %hr.section-heading-spacer/
