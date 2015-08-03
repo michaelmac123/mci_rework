@@ -34,29 +34,29 @@ body_class: projects
             %ul.list-unstyled.project-outline-list
               - unless project['project_name'].blank?
                 %li.list-title Project
-              %li= project['project_name']
+                %li= project['project_name']
               - unless project['client'].blank?
                 %li.list-title Client
-              %li= project['client']
+                %li= project['client']
               - unless project['architect'].blank?
                 %li.list-title Architect
-              %li= project['architect']
+                %li= project['architect']
               - unless project['engineer'].blank?
                 %li.list-title Engineer
-              %li= project['engineer']
+                %li= project['engineer']
               - unless project['location'].blank?
                 %li.list-title Location
-              %li= project['location']
+                %li= project['location']
               - unless project['duration'].blank?
                 %li.list-title Duration
-              %li= project['duration']
+                %li= project['duration']
               - unless project['market_sector'].blank?
                 %li.list-title Market Sector
-              %li= link_to project['market_sector'], "/services#services"
+                %li= link_to project['market_sector'], "/services#services"
               - unless project['core_market'].blank?
                 %li.list-title Core
-              - project['core_market'].each do |core|
-                %li= core
+                - project['core_market'].each do |core|
+                  %li= core
 
           .col-md-8.col-sm-6
             - image_path = image_paths_in("images/project-images/MCI-#{project['name'].parameterize}/")
