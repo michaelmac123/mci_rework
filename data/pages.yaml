@@ -18,10 +18,10 @@
   name: Services
   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
 
-- page:
-  id: 5
-  name: Construction Management
-  page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
+# - page:
+#   id: 5
+#   name: Construction Management
+#   page_slogan: "Developing long-term customer relationships through great communication, solid collaboration and solution driven construction processes."
 
 - page:
   id: 6
