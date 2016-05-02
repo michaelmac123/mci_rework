@@ -21,15 +21,6 @@
     ability to multi-task and manage operational complexities have been founded time and time again.</p>"
 
 - biography:
-  id: 3
-  name: "Merrill Jannison"
-  title: "Vice President, Sales & Marketing"
-  description:
-    "<p>Merrill has 25 years of experience in sales & marketing through a variety of sales channels, including traditional and electronic retail distribution. Merrill has provided a wide range
-    of companies with expert advice on business planning, product development, channel distribution, sales concept implementation, strategic positioning, and go to market strategy.</p>
-    <p>Merrill brings our clients exceptional consulting acumen in brand development, strategic placement in traditional retail, e-Commerce and Direct Response markets.</p>"
-
-- biography:
   id: 4
   name: "Jim Whitney"
   title: "Sr. Project Manager"
@@ -38,18 +29,6 @@
     earthwork to vertical turn-key construction which gives him the ability to manage projects in a controlled manner. He has experience in all phases of construction including marketing,
     overseeing designers, subcontracting, cost control, estimating and scheduling. His ability to project manage is exceptional giving him the ability to anticipate, identify and deal with
     issues before they become problems.</p><p>Jim has a degree from the University of Washington School of Medicine and is licensed as a Advanced Life Support Paramedic with the State of Washington.</p>"
-
-- biography:
-  id: 5
-  name: "Tim Hopkins"
-  title: "Sr. General Superintendent"
-  description:
-    "<p>Tim is a seasoned veteran in the construction industry with over 30 years' experience. His multifaceted experience makes him one of the most effective and efficient supervisors
-    in the industry. Having history in residential, multifamily, commercial and industrial project types he interfaces the needs of the project team with the actual project needs. A superintendent's
-    responsibility is critical to bring into fruition sometimes years planning that needs to be performed with precision coordination to have a successfully safely executed and completed project.
-    Tim is an intricate part of the MCI projects team and a MCI safety team leader. He continues to be at the front line ensuring that MCI's high standards are adhered to while also meeting the
-    customers specifications but exceeding their expectations on time and on budget. A solution, and challenge specialist being well versed in value engineering, he is successfully works with
-    architects, project managers and inspectors to create solutions to benefit the customer.<p></p>Tim is a leading example through action of the MCI way of doing business, in that 'Clients matter'.</p>"
 
 - biography:
   id: 6
@@ -72,11 +51,10 @@
 
 - biography:
   id: 7
-  name: "Susan Darr"
+  name: "Jeanne Ioset"
   title: "Office Manager"
   description:
-    "<p>Susan is often the first contact at Mitchell Contractors and is involved in a wide variety of duties. These include, but are not limited to; reception, filing, processing of invoices, balancing accounts, payroll, sub-contracts and client interactions.
-    She has experience in office management, bookkeeping, banking, and education.  She has been with the company since early 2012.</p>"
+    "<p>Coming Soon...</p>"
 
 - biography:
   id: 8
